@@ -2,11 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="" type="image/gif">
 
+    @include('front.styles')
     @yield('styles')
     @yield('meta')
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 </head>
 <body>
 <div class="wrapper">
@@ -20,8 +22,9 @@
 </div>
 <div class="hide">
 
+    @include('front.popups.ask')
     @include('front.popups.thank')
-    <a href="#thanks" class="thank"></a>
+    <a href="/mail/thanks" class="thank open_popup"></a>
 </div>
 @include('front.scripts')
 @include('front.metriks')
