@@ -1,7 +1,38 @@
 .header{
+  background-color: #28323c;
 
-  &__wrap-1220{
+  &__wrap-1170{
     display: flex;
-    max-width: 1220px;
+    justify-content: space-between;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 40px 40px 20px 70px;
   }
+
+  &__inf-wrap{
+    display: flex;
+    margin-top: 20px;
+  }
+
+  &__inf{
+    display: flex;
+    align-items: flex-start;
+
+    &:last-child{
+      margin-left: 40px;
+    }
+  }
+
+  &__inf-img{}
+
+  &__inf-text{
+    max-width: 100px;
+    margin: -4px 0 0 20px;
+    font-size: 12px;
+
+    &--longer{
+      max-width: 130px;
+    }
+  }
+
 }
