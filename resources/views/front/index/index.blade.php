@@ -232,5 +232,154 @@
     </section>
 
 
-    <section class="packages"></section>
+    <section class="packages">
+        <div class="package package--lighter">
+            <div class="package__wrap-1080">
+                <h2 class="package__blocks-title">СПОНСОРСКИЕ ПАКЕТЫ</h2>
+                <h2 class="package__block-title package__block-title--top-indent block-title">ЧЕМПИОНСКИЙ <span class="thin-green">ПАКЕТ</span></h2>
+                <ul class="package__components-list components-list">
+                    <li class="components-list__item info-block">
+                        <img src="/img/280x280.jpg" alt="" class="info-block__img">
+                        <h3 class="info-block__title">1.<br><span class="reg-green">БРЕНДИРОВАНИЕ</span><br>ГЛАВНОГО КОРТА</h3>
+                        <p class="info-block__text">Мы оформим и брендируем основную
+                            площадку для соревнований, на которой
+                            пройдут ключевые конкурсы, матчи
+                            плэйофф и финал.</p>
+                    </li>
+                    <li class="components-list__item info-block">
+                        <img src="/img/280x280.jpg" alt="" class="info-block__img">
+                        <h3 class="info-block__title">2.<br><span class="reg-green">МАРКЕТИНГ ВО ВРЕМЯ</span><br>СОРЕВНОВАНИЙ</h3>
+                        <p class="info-block__text">Команда организаторов, совместно с
+                            маркетологами спонсора, организует
+                            маркетинг на турнире. Мы поможем
+                            получить интерес аудитории и
+                            максимальную пользу от участия.</p>
+                    </li>
+                    <li class="components-list__item info-block">
+                        <img src="/img/280x280.jpg" alt="" class="info-block__img">
+                        <h3 class="info-block__title">3.<br><span class="reg-green">БРЕНДИРОВАНИЕ</span><br>ФУТБОЛОК</h3>
+                        <p class="info-block__text">Футболки — один из ключевых элементов
+                            маркетинга. Каждый баскет Алматы
+                            любит и носит годами наши футболки, а
+                            мы стараемся каждый год делать самый
+                            крутой дизайн.</p>
+                    </li>
+                    <li class="components-list__item components-list__item--520 info-block">
+                        <img src="/img/520x370.jpg" alt="" class="info-block__img">
+                        <h3 class="info-block__title">4.<br><span class="reg-green">НАНЕСЕНИЕ ЛОГОТИПА</span><br>НА ПРИЗЫ И ПРОМО-МАТЕРИАЛЫ</h3>
+                        <p class="info-block__text">Каждый год мы увеличиваем количество и качество призов:
+                            футболки, чемпионские трофеи и баннеры, сетка плэйофф,
+                            сертификаты и дипломы. Логотип спонсора и ссылка на сайт
+                            добавляются на каждый элемент.</p>
+                    </li>
+                    <li class="components-list__item components-list__item--490 info-block">
+                        <img src="/img/490x280.jpg" alt="" class="info-block__img">
+                        <h3 class="info-block__title">5.<br><span class="reg-green">БРЕНДИРОВАНИЕ</span><br>КОМАНДЫ ДЕВИЗИОНА «ЭЛИТ»</h3>
+                        <p class="info-block__text">Одна из лучших команд будет использовать название компании спонсора и носить фирменную форму.</p>
+                        <h3 class="info-block__title info-block__title--top-indent">6.<br><span class="reg-green">БЕСПЛАТНОЕ УЧАСТИЕ</span><br>КОРПОРАТИВНОЙ КОМАНДЫ</h3>
+                        <p class="info-block__text">Если среди сотрудников есть баскетболисты, они могут представить
+                            компанию в корпоративном девизионе. Мы проведем тренировку, чтобы подготовить их к достойному участию и поможем лучше понять основы игры.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="package package--darker">
+            <div class="package__wrap-1080">
+                <h2 class="package__block-title block-title">ВЕТЕРАНСКИЙ <span class="thin-green">ПАКЕТ</span></h2>
+                <ul class="package__components-list components-list">
+                    <li class="components-list__item info-block">
+                        <img src="/img/280x280.jpg" alt="" class="info-block__img">
+                        <h3 class="info-block__title">1.<br><span class="reg-green">БРЕНДИРОВАНИЕ</span><br>ГЛАВНОГО КОРТА</h3>
+                        <p class="info-block__text">Мы оформим и брендируем основную
+                            площадку для соревнований, на которой
+                            пройдут ключевые конкурсы, матчи
+                            плэйофф и финал.</p>
+                    </li>
+                    <li class="components-list__item info-block">
+                        <img src="/img/280x280.jpg" alt="" class="info-block__img">
+                        <h3 class="info-block__title">2.<br><span class="reg-green">МАРКЕТИНГ ВО ВРЕМЯ</span><br>СОРЕВНОВАНИЙ</h3>
+                        <p class="info-block__text">Команда организаторов, совместно с
+                            маркетологами спонсора, организует
+                            маркетинг на турнире. Мы поможем
+                            получить интерес аудитории и
+                            максимальную пользу от участия.</p>
+                    </li>
+                    <li class="components-list__item info-block">
+                        <img src="/img/280x280.jpg" alt="" class="info-block__img">
+                        <h3 class="info-block__title">3.<br><span class="reg-green">БРЕНДИРОВАНИЕ</span><br>ФУТБОЛОК</h3>
+                        <p class="info-block__text">Футболки — один из ключевых элементов
+                            маркетинга. Каждый баскет Алматы
+                            любит и носит годами наши футболки, а
+                            мы стараемся каждый год делать самый
+                            крутой дизайн.</p>
+                    </li>
+                    <li class="components-list__item components-list__item--490 info-block">
+                        <img src="/img/490x280.jpg" alt="" class="info-block__img">
+                        <h3 class="info-block__title">5.<br><span class="reg-green">БРЕНДИРОВАНИЕ</span><br>КОМАНДЫ ДЕВИЗИОНА «ЭЛИТ»</h3>
+                        <p class="info-block__text">Одна из лучших команд будет использовать название компании спонсора и носить фирменную форму.</p>
+                        <h3 class="info-block__title info-block__title--top-indent">6.<br><span class="reg-green">БЕСПЛАТНОЕ УЧАСТИЕ</span><br>КОРПОРАТИВНОЙ КОМАНДЫ</h3>
+                        <p class="info-block__text">Если среди сотрудников есть баскетболисты, они могут представить
+                            компанию в корпоративном девизионе. Мы проведем тренировку, чтобы подготовить их к достойному участию и поможем лучше понять основы игры.</p>
+                    </li>
+                    <li class="components-list__item components-list__item--520 info-block">
+                        <img src="/img/520x370.jpg" alt="" class="info-block__img">
+                        <h3 class="info-block__title">4.<br><span class="reg-green">НАНЕСЕНИЕ ЛОГОТИПА</span><br>НА ПРИЗЫ И ПРОМО-МАТЕРИАЛЫ</h3>
+                        <p class="info-block__text">Каждый год мы увеличиваем количество и качество призов:
+                            футболки, чемпионские трофеи и баннеры, сетка плэйофф,
+                            сертификаты и дипломы. Логотип спонсора и ссылка на сайт
+                            добавляются на каждый элемент.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="package package--lighter">
+            <div class="package__wrap-1080">
+                <h2 class="package__block-title block-title">СТАРТОВЫЙ <span class="thin-green">ПАКЕТ</span></h2>
+                <ul class="package__components-list components-list">
+                    <li class="components-list__item info-block">
+                        <img src="/img/280x280.jpg" alt="" class="info-block__img">
+                        <h3 class="info-block__title">1.<br><span class="reg-green">БРЕНДИРОВАНИЕ</span><br>ГЛАВНОГО КОРТА</h3>
+                        <p class="info-block__text">Мы оформим и брендируем основную
+                            площадку для соревнований, на которой
+                            пройдут ключевые конкурсы, матчи
+                            плэйофф и финал.</p>
+                    </li>
+                    <li class="components-list__item info-block">
+                        <img src="/img/280x280.jpg" alt="" class="info-block__img">
+                        <h3 class="info-block__title">2.<br><span class="reg-green">МАРКЕТИНГ ВО ВРЕМЯ</span><br>СОРЕВНОВАНИЙ</h3>
+                        <p class="info-block__text">Команда организаторов, совместно с
+                            маркетологами спонсора, организует
+                            маркетинг на турнире. Мы поможем
+                            получить интерес аудитории и
+                            максимальную пользу от участия.</p>
+                    </li>
+                    <li class="components-list__item info-block">
+                        <img src="/img/280x280.jpg" alt="" class="info-block__img">
+                        <h3 class="info-block__title">3.<br><span class="reg-green">БРЕНДИРОВАНИЕ</span><br>ФУТБОЛОК</h3>
+                        <p class="info-block__text">Футболки — один из ключевых элементов
+                            маркетинга. Каждый баскет Алматы
+                            любит и носит годами наши футболки, а
+                            мы стараемся каждый год делать самый
+                            крутой дизайн.</p>
+                    </li>
+                    <li class="components-list__item components-list__item--520 info-block">
+                        <img src="/img/520x370.jpg" alt="" class="info-block__img">
+                        <h3 class="info-block__title">4.<br><span class="reg-green">НАНЕСЕНИЕ ЛОГОТИПА</span><br>НА ПРИЗЫ И ПРОМО-МАТЕРИАЛЫ</h3>
+                        <p class="info-block__text">Каждый год мы увеличиваем количество и качество призов:
+                            футболки, чемпионские трофеи и баннеры, сетка плэйофф,
+                            сертификаты и дипломы. Логотип спонсора и ссылка на сайт
+                            добавляются на каждый элемент.</p>
+                    </li>
+                    <li class="components-list__item components-list__item--490 info-block">
+                        <img src="/img/490x280.jpg" alt="" class="info-block__img">
+                        <h3 class="info-block__title">5.<br><span class="reg-green">БРЕНДИРОВАНИЕ</span><br>КОМАНДЫ ДЕВИЗИОНА «ЭЛИТ»</h3>
+                        <p class="info-block__text">Одна из лучших команд будет использовать название компании спонсора и носить фирменную форму.</p>
+                        <h3 class="info-block__title info-block__title--top-indent">6.<br><span class="reg-green">БЕСПЛАТНОЕ УЧАСТИЕ</span><br>КОРПОРАТИВНОЙ КОМАНДЫ</h3>
+                        <p class="info-block__text">Если среди сотрудников есть баскетболисты, они могут представить
+                            компанию в корпоративном девизионе. Мы проведем тренировку, чтобы подготовить их к достойному участию и поможем лучше понять основы игры.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
 @endsection
