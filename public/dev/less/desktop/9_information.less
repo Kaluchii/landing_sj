@@ -1,0 +1,62 @@
+.information{
+  background-color: #1c222a;
+
+  &__wrap-1110{
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 0 100px 70px 70px;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__text-wrap{
+    max-width: 450px;
+  }
+
+  &__block-title{}
+
+  &__text{
+    padding-right: 60px;
+  }
+
+  &__text-paragraph{}
+
+  &__give-offer-wrap{
+    margin-top: 75px;
+  }
+
+  &__give-offer-btn{
+    display: inline-block;
+    padding: 20px;
+    font-size: 20px;
+    color: #FFFFFF;
+    background-color: #85be4c;
+    border-radius: 3px;
+  }
+
+  &__images-list{
+    max-width: 660px;
+  }
+}
+
+.images-list{
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item{
+    max-width: 200px;
+
+    &:nth-last-child(n+4){
+      margin-bottom: 20px;
+    }
+
+    &:nth-child(3n+2){
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
+
+  &__img{
+    display: block;
+  }
+}

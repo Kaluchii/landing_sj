@@ -2,11 +2,40 @@
   background-color: #28323c;
 
   &__wrap-1210{
-    max-width: 1210px;
+    max-width: 1280px;
     margin: 0 auto;
-    padding-left: 70px;
+    display: flex;
+    align-items: flex-start;
   }
 
-  &__block-title{
+  &__text-col{
+    padding: 0 55px 0 70px;
+  }
+
+  &__block-title{}
+
+  &__list{
+    max-width: 710px;
+  }
+
+  &__img{}
+}
+
+.two-col-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &__item{
+    box-sizing: border-box;
+    width: 50%;
+    margin-bottom: 30px;
+
+    &:nth-child(2n){
+      padding-left: 15px;
+    }
+    &:nth-child(2n+1){
+      padding-right: 15px;
+    }
   }
 }
