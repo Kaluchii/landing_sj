@@ -1,6 +1,26 @@
 @extends('front.layout')
 @include('front.index.meta')
 @section('content')
+    <section class="index-header">
+        <div class="index-header__wrap-1170">
+            <div class="index-header__logo-wrap">
+                <img src="/img/logo.png" alt="" class="index-header__logo">
+            </div>
+            <div class="index-header__inf-wrap">
+                <div class="index-header__inf">
+                    Поставить тени картинкам
+                    <img src="/img/40x60.jpg" alt="" class="index-header__inf-img">
+                    <p class="index-header__inf-text">При поддержке Стритбольной Лиги Казахстана</p>
+                </div>
+                <div class="index-header__inf">
+                    <img src="/img/70x40.jpg" alt="" class="index-header__inf-img">
+                    <p class="index-header__inf-text index-header__inf-text--longer">Турнир соответствует международному регламенту FIBA 3X3</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <section class="titular">
         <div class="titular__wrap-1220">
             <h1 class="titular__block-title">Крупнейший в Казахстане любительский турнир
@@ -379,6 +399,21 @@
                             компанию в корпоративном девизионе. Мы проведем тренировку, чтобы подготовить их к достойному участию и поможем лучше понять основы игры.</p>
                     </li>
                 </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="contact-us">
+        <div class="contact-us__wrap-520">
+            <div class="contact-us__contact-block contact-block">
+                <h3 class="contact-block__title">СВЯЖИТЕСЬ С НАМИ<br><span class="thin-green">ЕСЛИ У ВАС ВОЗНИКЛИ ВОПРОСЫ</span></h3>
+                <div class="contact-block__img-wrap">
+                    <img src="/img/contact.jpg" alt="" class="contact-block__img">
+                </div>
+                <p class="contact-block__name">ЗОЯ ПОНКРАШКИНА</p>
+                <p class="contact-block__position">PR-ДИРЕКТОР</p>
+                <p class="contact-block__tel">+7 702 777-00-48</p>
             </div>
         </div>
     </section>
