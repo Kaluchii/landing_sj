@@ -1,27 +1,26 @@
 @extends('front.layout')
 @include('front.index.meta')
 @section('content')
-    <section class="index-header">
+    {{--<section class="index-header">
         <div class="index-header__wrap-1170">
             <div class="index-header__logo-wrap">
                 <img src="/img/logo.png" alt="" class="index-header__logo">
             </div>
             <div class="index-header__inf-wrap">
                 <div class="index-header__inf">
-                    Поставить тени картинкам
                     <img src="/img/40x60.jpg" alt="" class="index-header__inf-img">
                     <p class="index-header__inf-text">При поддержке Стритбольной Лиги Казахстана</p>
                 </div>
                 <div class="index-header__inf">
-                    <img src="/img/70x40.jpg" alt="" class="index-header__inf-img">
+                    <img src="/img/70x40.jpg" alt="" class="index-header__inf-img index-header__inf-img--longer">
                     <p class="index-header__inf-text index-header__inf-text--longer">Турнир соответствует международному регламенту FIBA 3X3</p>
                 </div>
             </div>
         </div>
-    </section>
+    </section>--}}
 
 
-    <section class="titular">
+    {{--<section class="titular">
         <div class="titular__wrap-1220">
             <h1 class="titular__block-title">Крупнейший в Казахстане любительский турнир
                 <br><span class="thin-green"> по баскетболу 3x3</span>
@@ -38,10 +37,10 @@
                             class="reg-green"> США,<br>СРЕДНЕЙ АЗИИ И СО ВСЕГО КАЗАХСТАНА</span></li>
             </ul>
         </div>
-    </section>
+    </section>--}}
 
 
-    <section class="statistic">
+    {{--<section class="statistic">
         <div class="statistic__wrap-1090">
             <h2 class="statistic__block-title block-title">СТАТИСТИКА<span class="thin-green"> ТУРНИРА</span></h2>
             <div class="statistic__img-facts-wrap">
@@ -70,7 +69,7 @@
             <p class="statistic__sj-grow-text">За 10 лет, SummerJam вырос из небольшого турнира в парке в самый
                 крупный и стабильный любительский турнир Казахстана.<br>И мы только начали.</p>
         </div>
-    </section>
+    </section>--}}
 
 
     <section class="principles">
@@ -138,7 +137,7 @@
     </section>
 
 
-    <section class="leaders">
+    {{--<section class="leaders">
         <div class="leaders__wrap-1080">
             <h2 class="leaders__block-title block-title"><span class="thin-green">НАШИ</span> ЛИДЕРЫ</h2>
             <ul class="leaders__list three-elem-list">
@@ -171,7 +170,7 @@
                 </li>
             </ul>
         </div>
-    </section>
+    </section>--}}
 
 
     <section class="support">
@@ -188,7 +187,7 @@
     </section>
 
 
-    <section class="plans">
+    {{--<section class="plans">
         <div class="plans__wrap-1210">
             <div class="plans__text-col">
                 <h2 class="plans__block-title block-title"><span class="thin-green">ПЛАНЫ</span> РАЗВИТИЯ</h2>
@@ -218,10 +217,10 @@
             </div>
             <img src="/img/570x650.jpg" alt="" class="plans__img">
         </div>
-    </section>
+    </section>--}}
 
 
-    <section class="information">
+    {{--<section class="information">
         <div class="information__wrap-1110">
             <div class="information__text-wrap">
                 <h2 class="information__block-title block-title"><span class="thin-green">ИНФОРМАЦИЯ</span> ДЛЯ СПОНСОРА
@@ -249,10 +248,10 @@
                 <li class="images-list__item"><img src="/img/200x130w.jpg" alt="" class="images-list__img"></li>
             </ul>
         </div>
-    </section>
+    </section>--}}
 
 
-    <section class="packages">
+    {{--<section class="packages">
         <div class="package package--lighter">
             <div class="package__wrap-1080">
                 <h2 class="package__blocks-title">СПОНСОРСКИЕ ПАКЕТЫ</h2>
@@ -401,10 +400,10 @@
                 </ul>
             </div>
         </div>
-    </section>
+    </section>--}}
 
 
-    <section class="contact-us">
+    {{--<section class="contact-us">
         <div class="contact-us__wrap-520">
             <div class="contact-us__contact-block contact-block">
                 <h3 class="contact-block__title">СВЯЖИТЕСЬ С НАМИ<br><span class="thin-green">ЕСЛИ У ВАС ВОЗНИКЛИ ВОПРОСЫ</span></h3>
@@ -416,5 +415,5 @@
                 <p class="contact-block__tel">+7 702 777-00-48</p>
             </div>
         </div>
-    </section>
+    </section>--}}
 @endsection

@@ -1,9 +1,44 @@
 .header{
   background-color: #1c222a;
 
-  &__wrap-1175{
-    max-width: 1175px;
+  &__wrap-1170{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1170px;
     margin: 0 auto;
-    padding: 15px 35px 15px 70px;
+    padding: 20px 40px 20px 70px;
+  }
+
+  &__main-menu{}
+
+  &__additionally-menu{}
+}
+
+.menu{
+  &__list{
+    display: flex;
+  }
+
+  &__item{
+    font-size: 14px;
+    font-weight: 900;
+
+    &--delimiter{
+      margin: 0 7px;
+    }
+
+    &--link{
+      & + .menu__item--link{
+        margin-left: 35px;
+      }
+    }
+  }
+
+  &__link:not(.link){
+    color: inherit;
+
+    &:hover{
+      color: #FFFFFF;
+    }
   }
 }

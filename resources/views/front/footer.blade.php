@@ -1,5 +1,5 @@
 @section('footer')
-    <footer class="footer">
+    {{--<footer class="footer">
         <div class="footer__wrap-1080">
             <div class="footer__socials socials">
                 <h4 class="socials__title">МЫ В СОЦИАЛЬНЫХ СЕТЯХ</h4>
@@ -21,5 +21,5 @@
             <p class="footer__developer">Разработка сайта, дизайна
                 и маркетинга турнира — <a href="interpro.kz" class="link">ИнтерПро</a></p>
         </div>
-    </footer>
+    </footer>--}}
 @endsection
