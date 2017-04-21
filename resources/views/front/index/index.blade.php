@@ -143,7 +143,7 @@
     </section>
 
 
-    {{--<section class="leaders">
+    <section class="leaders">
         <div class="leaders__wrap-1080">
             <h2 class="leaders__block-title block-title"><span class="thin-green">НАШИ</span> ЛИДЕРЫ</h2>
             <ul class="leaders__list three-elem-list">
@@ -181,7 +181,7 @@
                 </li>
             </ul>
         </div>
-    </section>--}}
+    </section>
 
 
     <section class="support">
@@ -262,7 +262,7 @@
     </section>--}}
 
 
-    {{--<section class="packages">
+    <section class="packages">
         <div class="package package--lighter">
             <div class="package__wrap-1080">
                 <h2 class="package__blocks-title">СПОНСОРСКИЕ ПАКЕТЫ</h2>
@@ -429,10 +429,10 @@
                 </ul>
             </div>
         </div>
-    </section>--}}
+    </section>
 
 
-    {{--<section class="contact-us">
+    <section class="contact-us">
         <div class="contact-us__wrap-520">
             <div class="contact-us__contact-block contact-block">
                 <h3 class="contact-block__title">СВЯЖИТЕСЬ С НАМИ<br><span class="thin-green">ЕСЛИ У ВАС ВОЗНИКЛИ ВОПРОСЫ</span></h3>
@@ -444,5 +444,5 @@
                 <p class="contact-block__tel">+7 702 777-00-48</p>
             </div>
         </div>
-    </section>--}}
+    </section>
 @endsection
