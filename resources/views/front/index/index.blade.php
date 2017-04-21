@@ -77,7 +77,7 @@
             <h2 class="principles__block-title block-title">НАШИ<span class="thin-green"> ПРИНЦИПЫ</span></h2>
             <ul class="principles__list three-elem-list">
                 <li class="three-elem-list__item info-block info-block--with-img">
-                    <img src="/img/280x280.jpg" alt="" class="info-block__img">
+                    <img src="/img/280x280.jpg" alt="" class="info-block__img info-block__img--move">
                     <div class="info-block__text-wrap">
                         <h3 class="info-block__title">ЕСЛИ МЫ ДЕЛАЕМ — <br><span
                                     class="reg-green">МЫ ДЕЛАЕМ ЭТО ХОРОШО</span></h3>
@@ -88,7 +88,7 @@
                     </div>
                 </li>
                 <li class="three-elem-list__item info-block info-block--with-img">
-                    <img src="/img/280x280.jpg" alt="" class="info-block__img">
+                    <img src="/img/280x280.jpg" alt="" class="info-block__img info-block__img--move">
                     <div class="info-block__text-wrap">
                         <h3 class="info-block__title">НЕ РАДИ <br><span class="reg-green">ДЕНЕГ</span></h3>
                         <p class="info-block__text">Мы не пытаемся заработать на
@@ -99,7 +99,7 @@
                     </div>
                 </li>
                 <li class="three-elem-list__item info-block info-block--with-img">
-                    <img src="/img/280x280.jpg" alt="" class="info-block__img">
+                    <img src="/img/280x280.jpg" alt="" class="info-block__img info-block__img--move">
                     <div class="info-block__text-wrap">
                         <h3 class="info-block__title">ШАГ ВПЕРЕД <br><span class="reg-green">КАЖДЫЙ ГОД</span></h3>
                         <p class="info-block__text">Каждый турнир — зимой или летом,
@@ -148,7 +148,7 @@
             <h2 class="leaders__block-title block-title"><span class="thin-green">НАШИ</span> ЛИДЕРЫ</h2>
             <ul class="leaders__list three-elem-list">
                 <li class="three-elem-list__item info-block info-block--with-img">
-                    <img src="/img/280x280.jpg" alt="" class="info-block__img">
+                    <img src="/img/280x280.jpg" alt="" class="info-block__img info-block__img--move">
                     <div class="info-block__text-wrap">
                         <h3 class="info-block__title">ДЕМИАН ЛОНГ <br><span class="reg-green">БОСТОН, США</span></h3>
                         <p class="info-block__text">Наш главный принцип — сохранить
@@ -158,7 +158,7 @@
                     </div>
                 </li>
                 <li class="three-elem-list__item info-block info-block--with-img">
-                    <img src="/img/280x280.jpg" alt="" class="info-block__img">
+                    <img src="/img/280x280.jpg" alt="" class="info-block__img info-block__img--move">
                     <div class="info-block__text-wrap">
                         <h3 class="info-block__title">ЖОМАРТ АССЕНКАНОВ <br><span class="reg-green">КАЗАХСТАН, АЛМАТЫ</span></h3>
                         <p class="info-block__text">Мы не пытаемся заработать на
@@ -169,7 +169,7 @@
                     </div>
                 </li>
                 <li class="three-elem-list__item info-block info-block--with-img">
-                    <img src="/img/280x280.jpg" alt="" class="info-block__img">
+                    <img src="/img/280x280.jpg" alt="" class="info-block__img info-block__img--move">
                     <div class="info-block__text-wrap">
                         <h3 class="info-block__title">ЛЮДМИЛА ПОНКРАШКИНА <br><span
                                     class="reg-green">КАЗАХСТАН, АЛМАТЫ</span></h3>
@@ -269,7 +269,7 @@
                 <h2 class="package__block-title package__block-title--top-indent block-title">ЧЕМПИОНСКИЙ <span class="thin-green">ПАКЕТ</span></h2>
                 <ul class="package__components-list components-list">
                     <li class="components-list__item info-block info-block--with-img">
-                        <img src="/img/280x280.jpg" alt="" class="info-block__img">
+                        <img src="/img/280x280.jpg" alt="" class="info-block__img info-block__img--move">
                         <div class="info-block__text-wrap">
                             <h3 class="info-block__title">1.<br><span class="reg-green">БРЕНДИРОВАНИЕ</span><br>ГЛАВНОГО КОРТА</h3>
                             <p class="info-block__text">Мы оформим и брендируем основную
@@ -279,7 +279,7 @@
                         </div>
                     </li>
                     <li class="components-list__item info-block info-block--with-img">
-                        <img src="/img/280x280.jpg" alt="" class="info-block__img">
+                        <img src="/img/280x280.jpg" alt="" class="info-block__img info-block__img--move">
                         <div class="info-block__text-wrap">
                             <h3 class="info-block__title">2.<br><span class="reg-green">МАРКЕТИНГ ВО ВРЕМЯ</span><br>СОРЕВНОВАНИЙ</h3>
                             <p class="info-block__text">Команда организаторов, совместно с
@@ -290,7 +290,7 @@
                         </div>
                     </li>
                     <li class="components-list__item info-block info-block--with-img">
-                        <img src="/img/280x280.jpg" alt="" class="info-block__img">
+                        <img src="/img/280x280.jpg" alt="" class="info-block__img info-block__img--move">
                         <div class="info-block__text-wrap">
                             <h3 class="info-block__title">3.<br><span class="reg-green">БРЕНДИРОВАНИЕ</span><br>ФУТБОЛОК</h3>
                             <p class="info-block__text">Футболки — один из ключевых элементов
@@ -324,7 +324,7 @@
                 <h2 class="package__block-title block-title">ВЕТЕРАНСКИЙ <span class="thin-green">ПАКЕТ</span></h2>
                 <ul class="package__components-list components-list">
                     <li class="components-list__item info-block info-block--with-img">
-                        <img src="/img/280x280.jpg" alt="" class="info-block__img">
+                        <img src="/img/280x280.jpg" alt="" class="info-block__img info-block__img--move">
                         <div class="info-block__text-wrap">
                             <h3 class="info-block__title">1.<br><span class="reg-green">БРЕНДИРОВАНИЕ</span><br>ГЛАВНОГО КОРТА</h3>
                             <p class="info-block__text">Мы оформим и брендируем основную
@@ -334,7 +334,7 @@
                         </div>
                     </li>
                     <li class="components-list__item info-block info-block--with-img">
-                        <img src="/img/280x280.jpg" alt="" class="info-block__img">
+                        <img src="/img/280x280.jpg" alt="" class="info-block__img info-block__img--move">
                         <div class="info-block__text-wrap">
                             <h3 class="info-block__title">2.<br><span class="reg-green">МАРКЕТИНГ ВО ВРЕМЯ</span><br>СОРЕВНОВАНИЙ</h3>
                             <p class="info-block__text">Команда организаторов, совместно с
@@ -345,7 +345,7 @@
                         </div>
                     </li>
                     <li class="components-list__item info-block info-block--with-img">
-                        <img src="/img/280x280.jpg" alt="" class="info-block__img">
+                        <img src="/img/280x280.jpg" alt="" class="info-block__img info-block__img--move">
                         <div class="info-block__text-wrap">
                             <h3 class="info-block__title">3.<br><span class="reg-green">БРЕНДИРОВАНИЕ</span><br>ФУТБОЛОК</h3>
                             <p class="info-block__text">Футболки — один из ключевых элементов
@@ -355,7 +355,7 @@
                                 крутой дизайн.</p>
                         </div>
                     </li>
-                    <li class="components-list__item components-list__item--490 info-block">
+                    <li class="components-list__item components-list__item--last components-list__item--490 info-block">
                         <img src="/img/490x280.jpg" alt="" class="info-block__img">
                         <h3 class="info-block__title">5.<br><span class="reg-green">БРЕНДИРОВАНИЕ</span><br>КОМАНДЫ ДЕВИЗИОНА «ЭЛИТ»</h3>
                         <p class="info-block__text">Одна из лучших команд будет использовать название компании спонсора и носить фирменную форму.</p>
@@ -379,7 +379,7 @@
                 <h2 class="package__block-title block-title">СТАРТОВЫЙ <span class="thin-green">ПАКЕТ</span></h2>
                 <ul class="package__components-list components-list">
                     <li class="components-list__item info-block info-block--with-img">
-                        <img src="/img/280x280.jpg" alt="" class="info-block__img">
+                        <img src="/img/280x280.jpg" alt="" class="info-block__img info-block__img--move">
                         <div class="info-block__text-wrap">
                             <h3 class="info-block__title">1.<br><span class="reg-green">БРЕНДИРОВАНИЕ</span><br>ГЛАВНОГО КОРТА</h3>
                             <p class="info-block__text">Мы оформим и брендируем основную
@@ -389,7 +389,7 @@
                         </div>
                     </li>
                     <li class="components-list__item info-block info-block--with-img">
-                        <img src="/img/280x280.jpg" alt="" class="info-block__img">
+                        <img src="/img/280x280.jpg" alt="" class="info-block__img info-block__img--move">
                         <div class="info-block__text-wrap">
                             <h3 class="info-block__title">2.<br><span class="reg-green">МАРКЕТИНГ ВО ВРЕМЯ</span><br>СОРЕВНОВАНИЙ</h3>
                             <p class="info-block__text">Команда организаторов, совместно с
@@ -400,7 +400,7 @@
                         </div>
                     </li>
                     <li class="components-list__item info-block info-block--with-img">
-                        <img src="/img/280x280.jpg" alt="" class="info-block__img">
+                        <img src="/img/280x280.jpg" alt="" class="info-block__img info-block__img--move">
                         <div class="info-block__text-wrap">
                             <h3 class="info-block__title">3.<br><span class="reg-green">БРЕНДИРОВАНИЕ</span><br>ФУТБОЛОК</h3>
                             <p class="info-block__text">Футболки — один из ключевых элементов
