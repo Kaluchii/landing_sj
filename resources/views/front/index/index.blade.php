@@ -20,7 +20,7 @@
     </section>
 
 
-    {{--<section class="titular">
+    <section class="titular">
         <div class="titular__wrap-1220">
             <h1 class="titular__block-title">Крупнейший в Казахстане любительский турнир
                 <br><span class="thin-green"> по баскетболу 3x3</span>
@@ -37,7 +37,7 @@
                             class="reg-green"> США,<br>СРЕДНЕЙ АЗИИ И СО ВСЕГО КАЗАХСТАНА</span></li>
             </ul>
         </div>
-    </section>--}}
+    </section>
 
 
     {{--<section class="statistic">
@@ -79,9 +79,9 @@
                 <li class="three-elem-list__item info-block info-block--with-img">
                     <img src="/img/280x280.jpg" alt="" class="info-block__img info-block__img--move">
                     <div class="info-block__text-wrap">
-                        <h3 class="info-block__title">ЕСЛИ МЫ ДЕЛАЕМ — <br><span
+                        <h3 class="info-block__title">ЕСЛИ МЫ ДЕЛАЕМ&nbsp;— <br><span
                                     class="reg-green">МЫ ДЕЛАЕМ ЭТО ХОРОШО</span></h3>
-                        <p class="info-block__text">Наш главный принцип — сохранить
+                        <p class="info-block__text">Наш главный принцип&nbsp;— сохранить
                             честность, интерес и любовь
                             участников. Никаких подделок: все
                             будет на высоком уровне.</p>
@@ -92,7 +92,7 @@
                     <div class="info-block__text-wrap">
                         <h3 class="info-block__title">НЕ РАДИ <br><span class="reg-green">ДЕНЕГ</span></h3>
                         <p class="info-block__text">Мы не пытаемся заработать на
-                            баскетболе — мы его развиваем.
+                            баскетболе&nbsp;— мы его развиваем.
                             Все средства, полученные от
                             турнира, возвращаются в развитие
                             баскетбола.</p>
@@ -102,7 +102,7 @@
                     <img src="/img/280x280.jpg" alt="" class="info-block__img info-block__img--move">
                     <div class="info-block__text-wrap">
                         <h3 class="info-block__title">ШАГ ВПЕРЕД <br><span class="reg-green">КАЖДЫЙ ГОД</span></h3>
-                        <p class="info-block__text">Каждый турнир — зимой или летом,
+                        <p class="info-block__text">Каждый турнир&nbsp;— зимой или летом,
                             мы делаем шаг вперед и поднимаем
                             организацию тунрира на новый
                             уровень.</p>
@@ -151,7 +151,7 @@
                     <img src="/img/280x280.jpg" alt="" class="info-block__img info-block__img--move">
                     <div class="info-block__text-wrap">
                         <h3 class="info-block__title">ДЕМИАН ЛОНГ <br><span class="reg-green">БОСТОН, США</span></h3>
-                        <p class="info-block__text">Наш главный принцип — сохранить
+                        <p class="info-block__text">Наш главный принцип&nbsp;— сохранить
                             честность, интерес и любовь
                             участников. Никаких подделок: все
                             будет на высоком уровне.</p>
@@ -162,7 +162,7 @@
                     <div class="info-block__text-wrap">
                         <h3 class="info-block__title">ЖОМАРТ АССЕНКАНОВ <br><span class="reg-green">КАЗАХСТАН, АЛМАТЫ</span></h3>
                         <p class="info-block__text">Мы не пытаемся заработать на
-                            баскетболе — мы его развиваем.
+                            баскетболе&nbsp;— мы его развиваем.
                             Все средства, полученные от
                             турнира, возвращаются в развитие
                             баскетбола.</p>
@@ -173,7 +173,7 @@
                     <div class="info-block__text-wrap">
                         <h3 class="info-block__title">ЛЮДМИЛА ПОНКРАШКИНА <br><span
                                     class="reg-green">КАЗАХСТАН, АЛМАТЫ</span></h3>
-                        <p class="info-block__text">Каждый турнир — зимой или летом,
+                        <p class="info-block__text">Каждый турнир&nbsp;— зимой или летом,
                             мы делаем шаг вперед и поднимаем
                             организацию тунрира на новый
                             уровень.</p>
