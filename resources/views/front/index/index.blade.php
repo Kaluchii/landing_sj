@@ -1,7 +1,7 @@
 @extends('front.layout')
 @include('front.index.meta')
 @section('content')
-    {{--<section class="index-header">
+    <section class="index-header">
         <div class="index-header__wrap-1170">
             <div class="index-header__logo-wrap">
                 <img src="/img/logo.png" alt="" class="index-header__logo">
@@ -17,7 +17,7 @@
                 </div>
             </div>
         </div>
-    </section>--}}
+    </section>
 
 
     {{--<section class="titular">
