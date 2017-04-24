@@ -40,11 +40,13 @@
     </section>
 
 
-    {{--<section class="statistic">
+    <section class="statistic">
         <div class="statistic__wrap-1090">
             <h2 class="statistic__block-title block-title">СТАТИСТИКА<span class="thin-green"> ТУРНИРА</span></h2>
             <div class="statistic__img-facts-wrap">
-                <img src="/img/820x540.jpg" alt="" class="statistic__img">
+                <div class="statistic__img-wrap">
+                    <img src="/img/820x540.jpg" alt="" class="statistic__img">
+                </div>
                 <ul class="statistic__facts facts-in-figures">
                     <li class="facts-in-figures__item">
                         <p class="facts-in-figures__figure">700</p>
@@ -60,7 +62,7 @@
                     </li>
                     <li class="facts-in-figures__item">
                         <p class="facts-in-figures__figure">50&nbsp;000</p>
-                        <p class="facts-in-figures__text">ЗРИТЕЛЕЙ В СОЦИАЛЬНЫХ СЕТЯХ</p>
+                        <p class="facts-in-figures__text">ЗРИТЕЛЕЙ В<br>СОЦИАЛЬНЫХ СЕТЯХ</p>
                     </li>
                 </ul>
             </div>
@@ -69,7 +71,7 @@
             <p class="statistic__sj-grow-text">За 10 лет, SummerJam вырос из небольшого турнира в парке в самый
                 крупный и стабильный любительский турнир Казахстана.<br>И мы только начали.</p>
         </div>
-    </section>--}}
+    </section>
 
 
     <section class="principles">
@@ -198,7 +200,7 @@
     </section>
 
 
-    {{--<section class="plans">
+    <section class="plans">
         <div class="plans__wrap-1210">
             <div class="plans__text-col">
                 <h2 class="plans__block-title block-title"><span class="thin-green">ПЛАНЫ</span> РАЗВИТИЯ</h2>
@@ -228,7 +230,7 @@
             </div>
             <img src="/img/570x650.jpg" alt="" class="plans__img">
         </div>
-    </section>--}}
+    </section>
 
 
     {{--<section class="information">

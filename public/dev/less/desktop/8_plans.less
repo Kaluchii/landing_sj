@@ -5,7 +5,7 @@
     max-width: 1280px;
     margin: 0 auto;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
   }
 
   &__text-col{
@@ -29,8 +29,10 @@
   &__item{
     box-sizing: border-box;
     width: 50%;
-    margin-bottom: 30px;
 
+    &:nth-child(n+3){
+      margin-top: 40px;
+    }
     &:nth-child(2n){
       padding-left: 15px;
     }
