@@ -233,10 +233,10 @@
     </section>
 
 
-    {{--<section class="information">
+    <section class="information">
         <div class="information__wrap-1110">
             <div class="information__text-wrap">
-                <h2 class="information__block-title block-title"><span class="thin-green">ИНФОРМАЦИЯ</span> ДЛЯ СПОНСОРА
+                <h2 class="information__block-title block-title"><span class="thin-green">ИНФОРМАЦИЯ</span><br>ДЛЯ СПОНСОРА
                 </h2>
                 <div class="information__text">
                     <p class="information__text-paragraph">Мы предоставляем статус официального спонсора каждой
@@ -261,7 +261,7 @@
                 <li class="images-list__item"><img src="/img/200x130w.jpg" alt="" class="images-list__img"></li>
             </ul>
         </div>
-    </section>--}}
+    </section>
 
 
     <section class="packages">
