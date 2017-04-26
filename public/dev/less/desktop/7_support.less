@@ -1,28 +1,29 @@
 .support{
   background-color: #1c222a;
 
-  &__wrap-1080{
-    max-width: 1080px;
+  &__wrap-1200{
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 25px 130px 35px 70px;
+    padding: 25px 50px 15px 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   &__block-title{
-    font-size: 20px;
-    font-weight: 900;
+    text-align: center;
   }
 
   &__images-list{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-top: 15px;
   }
 
   &__images-list-item{
     line-height: 0;
-
-    &:nth-child(n+2){
-      margin-left: 20px;
-    }
+    margin: 0 20px 20px 0;
   }
 
   &__img{

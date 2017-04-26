@@ -187,8 +187,8 @@
 
 
     <section class="support">
-        <div class="support__wrap-1080">
-            <h3 class="support__block-title"><span class="reg-green">ИНФОРМАЦИОННАЯ</span> ПОДДЕРЖКА</h3>
+        <div class="support__wrap-1200">
+            <h2 class="support__block-title block-title"><span class="thin-green">ИНФОРМАЦИОННАЯ</span><br> ПОДДЕРЖКА</h2>
             <ul class="support__images-list">
                 <li class="support__images-list-item"><img src="/img/200x130.jpg" alt="" class="support__img"></li>
                 <li class="support__images-list-item"><img src="/img/200x130.jpg" alt="" class="support__img"></li>
@@ -234,7 +234,7 @@
 
 
     <section class="information">
-        <div class="information__wrap-1110">
+        <div class="information__wrap-1160">
             <div class="information__text-wrap">
                 <h2 class="information__block-title block-title"><span class="thin-green">ИНФОРМАЦИЯ</span><br>ДЛЯ СПОНСОРА
                 </h2>

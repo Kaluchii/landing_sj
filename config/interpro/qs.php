@@ -2,55 +2,72 @@
 
 return [
 
-    'block_birds' => [
-        'string' => [
-            'descr'
-        ],
+    'titular' => [
+        'string' => ['block_title'],
+        'image' => ['main_img'],
 
         'groups' => [
-            'group_bird_type' => [
-                'string' => [
-                    'descr'
-                ],
-                'group_bird_class' => [
-                    'example'
-                ],
-            ],
-            'group_bird_class' => [
-                'string' => [
-                    'descr'
-                ],
-                'image' => [
-                    'foto'
-                ],
-                'group_bird_type' => [
-                    'superior'
-                ]
-            ],
-            'group_bird_area' => [
-                'group_area' => [
-                    'area'
-                ],
-                'group_bird_type' => [
-                    'superior'
-                ]
+            'facts' => [
+                'string' => ['text']
             ]
         ]
     ],
 
-    'block_areas' => [
-        'string' => [
-            'descr'
-        ],
+
+    'statistic' => [
+        'string' => ['block_title'],
+        'image' => ['main_img'],
+        'text' => ['text_on_green'],
 
         'groups' => [
-            'group_area' => [
-                'string' => [
-                    'descr'
-                ]
+            'facts_in_fig' => [
+                'string' => ['number', 'text']
             ]
         ]
+    ],
 
-    ]
 
+    'principles' => [
+        'string' => ['block_title'],
+
+        'groups' => [
+            'principles_list' => [
+                'image' => ['img'],
+                'string' => ['item_title'],
+                'text' => ['text']
+            ]
+        ]
+    ],
+
+
+    'objectives' => [
+        'string' => ['block_title'],
+        'image' => ['main_img'],
+
+        'groups' => [
+            'objectives_list' => [
+                'string' => ['item_title'],
+                'text' => ['text']
+            ]
+        ]
+    ],
+
+
+    'leaders' => [
+        'string' => ['block_title'],
+
+        'groups' => [
+            'leaders_list' => [
+                'image' => ['img'],
+                'string' => ['item_title'],
+                'text' => ['text']
+            ]
+        ]
+    ],
+
+
+    'support' => [
+        'string' => ['block_title'],
+        'imageset' => ['support_list' => 'img'],
+    ],
 ];

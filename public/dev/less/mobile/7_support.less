@@ -1,18 +1,17 @@
 @media all and (max-width: 1130px){
   .support{
-    &__wrap-1080{
-      padding: 25px 40px 35px;
+    &__wrap-1200{
+      padding: 25px 20px 35px 40px;
     }
 
     &__block-title{
+      padding-right: 20px;
     }
 
     &__images-list{
     }
 
     &__images-list-item{
-      &:nth-child(n+2){
-      }
     }
 
     &__img{
@@ -35,20 +34,8 @@
 
     &__images-list-item{
       width: 30%;
+      margin: 0 3.3% 3.3% 0;
       max-width: 200px;
-
-      &:nth-child(n+2){
-        margin-left: 5%;
-      }
-
-      &:nth-child(4){
-        margin-left: 0;
-        margin-top: 5%;
-      }
-
-      &:nth-child(5){
-        margin-top: 5%;
-      }
     }
   }
 }
@@ -56,36 +43,43 @@
 
 @media all and (max-width: 620px) {
   .support{
-    &__wrap-1080{
-      padding: 25px 25px 35px;
+    &__wrap-1200{
+      padding: 25px 10px 35px 25px;
     }
+
+    &__block-title{
+      padding-right: 15px;
+    }
+
   }
 }
 
 
 @media all and (max-width: 520px) {
   .support{
-    &__wrap-1080{
+    &__wrap-1200{
+    }
+
+    &__block-title{
+      font-size: 38px;
     }
 
     &__images-list-item{
-      width: 47.5%;
+      width: 45%;
+      margin: 0 5% 5% 0;
+    }
+  }
+}
 
-      &:nth-child(2n+3){
-        margin-left: 0;
-      }
 
-      &:nth-child(3){
-        margin-top: 5%;
-      }
+@media all and (max-width: 420px) {
+  .support{
+    &__wrap-1200{
+      padding: 25px 5px 35px 20px;
+    }
 
-      &:nth-child(4){
-        margin-left: 5%;
-      }
-
-      &:nth-child(5){
-        margin-top: 5%;
-      }
+    &__block-title{
+      font-size: 28px;
     }
   }
 }

@@ -4,7 +4,7 @@ $(document).ready(function () {
         if ($(window).width() <= 1000) {
             $('.images-list').insertBefore($('.information__give-offer-wrap'));
         } else {
-            $('.images-list').appendTo($('.information__wrap-1110'));
+            $('.images-list').appendTo($('.information__wrap-1160'));
         }
     }
 

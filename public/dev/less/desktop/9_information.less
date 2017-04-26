@@ -1,12 +1,13 @@
 .information{
   background-color: #1c222a;
 
-  &__wrap-1110{
-    max-width: 1110px;
+  &__wrap-1160{
+    max-width: 1160px;
     margin: 0 auto;
-    padding: 0 100px 70px 70px;
+    padding: 0 50px 70px 70px;
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
+    justify-content: space-between;
   }
 
   &__text-wrap{
@@ -36,13 +37,15 @@
 
   &__images-list{
     max-width: 640px;
+    padding: 60px 0 0 30px;
   }
 }
 
 .images-list{
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
+  align-self: center;
 
   &__item{
     //max-width: 200px;

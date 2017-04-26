@@ -2,7 +2,7 @@
 
 return [
 
-    'modimages.wmimage' => [
+   /* 'modimages.wmimage' => [
         'resizes' => ['res100x100', 'res400'],
         'crops' => ['crop400x300']
     ],
@@ -15,6 +15,6 @@ return [
     'group_bird_class.foto' => [
         'resizes' => ['res100x100', 'res400', 'res800', 'res1000'],
         'crops' => ['crop800x600']
-    ]
+    ]*/
 
 ];

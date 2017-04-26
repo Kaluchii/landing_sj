@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'fields'=>
+    /*'fields'=>
         [
             'seotitle',
             'seodescription',
@@ -13,5 +13,5 @@ return [
             'group_bird_area',
             'group_bird_class',
             'block_birds'
-        ]
+        ]*/
 ];
