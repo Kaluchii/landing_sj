@@ -1,13 +1,13 @@
 <div class="box">
     <div class="box-header with-border">
-        <h3 class="box-title">Пункт {{$item->sorter_field}}</h3>
+        <h3 class="box-title">Партнер {{$item->sorter_field}}</h3>
         <button type="submit" class="btn btn-primary pull-right remove-flat-item" data-id="{{$item->id_field}}"
-                data-block="leaders_list">Удалить</button>
+                data-block="our_partners_list">Удалить</button>
     </div>
     <div class="box-body">
 
         <div class="form-group">
-            <label>Изображение</label>
+            <label>Логотип</label>
             <div class="dropzone">
                 <div class="file-input">
                     <div class="file-preview">
@@ -19,7 +19,7 @@
                                 <div class="file-thumbnail-footer">
                                     <div class="file-footer-caption" title="{{$item->img_field->alt}}">{{$item->img_field->name_field}} <br> </div>
                                     <div class="file-actions">
-                                        <input type="text" class="form-control alt-text" data-block="leaders_list" data-type="images" data-id="{{$item->id_field}}" data-name="alt" value="{{$item->img_field->alt}}">
+                                        <input type="text" class="form-control alt-text" data-block="our_partners_list" data-type="images" data-id="{{$item->id_field}}" data-name="alt" value="{{$item->img_field->alt}}">
                                         <div class="clearfix"></div>
                                     </div>
                                 </div>
@@ -36,33 +36,13 @@
                     <i class="glyphicon glyphicon-folder-open"></i>&nbsp;
                     <span class="hidden-xs">Выбрать изображение …</span>
                     <input type="file" class="form-control file"
-                           data-block="leaders_list"
+                           data-block="our_partners_list"
                            data-name="img"
                            data-type="image"
                            data-id="{{$item->id_field}}">
                 </div>
             </div>
 
-        </div>
-
-        <div class="form-group">
-            <label>Заголовок</label>
-            <input class="form-control string"
-                   type="text" placeholder=""
-                   value="{{$item->item_title_field}}"
-                   data-name="item_title"
-                   data-type="string"
-                   data-block="leaders_list"
-                   data-id="{{$item->id_field}}">
-        </div>
-
-        <div class="form-group">
-            <label>Текст</label>
-            <textarea class="form-control text"
-                      data-name="text"
-                      data-type="text"
-                      data-block="leaders_list"
-                      data-id="{{$item->id_field}}">{{$item->text_field}}</textarea>
         </div>
 
     </div>
