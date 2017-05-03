@@ -3,33 +3,58 @@
         <ul class="sidebar-menu">
             <li class="header">Главная страница</li>
             <li>
-                <a href="/adm/all">
-                    <i class="fa fa-globe"></i> <span>Общие настройки</span>
+                <a href="/adm/titular">
+                    <i class="fa  fa-check-square"></i> <span>Титульный блок</span>
                 </a>
             </li>
             <li>
-                <a href="/adm/advantages">
-                    <i class="fa  fa-check-square"></i> <span>Преимущества</span>
+                <a href="/adm/statistic">
+                    <i class="fa  fa-file-text-o"></i> <span>Статистика</span>
                 </a>
             </li>
             <li>
-                <a href="/adm/about">
-                    <i class="fa  fa-file-text-o"></i> <span>О компании</span>
+                <a href="/adm/principles">
+                    <i class="fa fa-image"></i> <span>Принципы</span>
                 </a>
             </li>
             <li>
-                <a href="/adm/slider">
-                    <i class="fa fa-image"></i> <span>Слайдер</span>
+                <a href="/adm/objectives">
+                    <i class="fa   fa-star-o"></i> <span>Цели</span>
                 </a>
             </li>
             <li>
-                <a href="/adm/certs">
-                    <i class="fa   fa-star-o"></i> <span>Сертификаты</span>
+                <a href="/adm/leaders">
+                    <i class="fa fa-chrome"></i> <span>Лидеры</span>
                 </a>
             </li>
             <li>
-                <a href="/adm/seo">
-                    <i class="fa fa-chrome"></i> <span>СЕО</span>
+                <a href="/adm/support">
+                    <i class="fa fa-chrome"></i> <span>Поддержка</span>
+                </a>
+            </li>
+            <li>
+                <a href="/adm/plans">
+                    <i class="fa fa-chrome"></i> <span>Планы</span>
+                </a>
+            </li>
+            <li>
+                <a href="/adm/information">
+                    <i class="fa fa-chrome"></i> <span>Спонсорам</span>
+                </a>
+            </li>
+            <li>
+                <a href="/adm/packages">
+                    <i class="fa fa-chrome"></i> <span>Спонсорские пакеты</span>
+                </a>
+            </li>
+            <li>
+                <a href="/adm/contact_us">
+                    <i class="fa fa-chrome"></i> <span>Свяжитесь с нами</span>
+                </a>
+            </li>
+            <li>
+                <a href="/adm/footer">
+                    <i class="fa fa-chrome"></i> <span>Футер</span>
                 </a>
             </li>
 
