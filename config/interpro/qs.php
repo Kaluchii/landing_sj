@@ -70,4 +70,90 @@ return [
         'string' => ['block_title'],
         'imageset' => ['support_list' => 'img'],
     ],
+
+
+    'plans' => [
+        'string' => ['block_title'],
+        'image' => ['main_img'],
+
+        'groups' => [
+            'plans_list' => [
+                'string' => ['item_title'],
+                'text' => ['text']
+            ]
+        ]
+    ],
+
+
+    'information' => [
+        'string' => ['block_title'],
+        'text' => ['text'],
+        'imageset' => ['partners_list' => 'img'],
+    ],
+
+
+    /*'package_chemp' => [
+        'string' => ['block_title'],
+
+        'groups' => [
+            'chemp_components_list' => [
+                'image' => ['img'],
+                'string' => ['item_title'],
+                'text' => ['text']
+            ]
+        ]
+    ],
+
+
+    'package_veteran' => [
+        'string' => ['block_title'],
+
+        'groups' => [
+            'veteran_components_list' => [
+                'image' => ['img'],
+                'string' => ['item_title'],
+                'text' => ['text']
+            ]
+        ]
+    ],
+
+
+    'package_start' => [
+        'string' => ['block_title'],
+
+        'groups' => [
+            'start_components_list' => [
+                'image' => ['img'],
+                'string' => ['item_title'],
+                'text' => ['text']
+            ]
+        ]
+    ],*/
+
+
+    'packages' => [
+        'groups' => [
+            'package_type' => [
+                'string' => ['block_title'],
+            ],
+
+            'components_list' => [
+                'image' => ['img'],
+                'string' => ['item_title'],
+                'text' => ['text'],
+                'package_type' => ['superior']
+            ]
+        ]
+    ],
+
+
+    'contact_us' => [
+        'string' => ['block_title', 'person_name', 'position', 'phone'],
+        'image' => ['main_img'],
+    ],
+
+
+    'footer' => [
+        'imageset' => ['our_partners_list' => 'img'],
+    ],
 ];

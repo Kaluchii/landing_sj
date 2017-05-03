@@ -13,13 +13,13 @@
             <div class="footer__partners partners">
                 <h4 class="partners__title">НАШИ ПАРТНЕРЫ</h4>
                 <ul class="partners__list">
-                    <li class="partners__item"><img src="/img/90x110.jpg" alt="" class="partners__img"></li>
-                    <li class="partners__item"><img src="/img/300x110.jpg" alt="" class="partners__img"></li>
-                    <li class="partners__item"><img src="/img/190x110.jpg" alt="" class="partners__img"></li>
+                    @foreach($footer->our_partners_list_group as $item)
+                        <li class="partners__item"><img src="{{$item->img_field->link}}" alt="{{$item->img_field->alt}}" class="partners__img"></li>
+                    @endforeach
                 </ul>
             </div>
             <p class="footer__developer">Разработка сайта, дизайна
-                и маркетинга турнира — <a href="interpro.kz" class="link">ИнтерПро</a></p>
+                и маркетинга турнира — <a href="//interpro.kz" class="link">ИнтерПро</a></p>
         </div>
     </footer>
 @endsection
