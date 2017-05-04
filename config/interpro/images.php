@@ -2,19 +2,38 @@
 
 return [
 
-   /* 'modimages.wmimage' => [
-        'resizes' => ['res100x100', 'res400'],
-        'crops' => ['crop400x300']
+    'titular.main_img' => [
+        'resizes' => ['preview']
     ],
-
-    'modimages.maskimage' => [
-        'resizes' => ['res100x100', 'res400'],
-        'crops' => ['crop400x300']
+    'statistic.main_img' => [
+        'resizes' => ['preview']
     ],
-
-    'group_bird_class.foto' => [
-        'resizes' => ['res100x100', 'res400', 'res800', 'res1000'],
-        'crops' => ['crop800x600']
-    ]*/
+    'principles_list.img' => [
+        'resizes' => ['preview']
+    ],
+    'objectives.main_img' => [
+        'resizes' => ['preview']
+    ],
+    'leaders_list.img' => [
+        'resizes' => ['preview']
+    ],
+    'support_list.img' => [
+        'resizes' => ['preview']
+    ],
+    'plans.main_img' => [
+        'resizes' => ['preview']
+    ],
+    'partners_list.img' => [
+        'resizes' => ['preview']
+    ],
+    'components_list.img' => [
+        'resizes' => ['preview']
+    ],
+    'contact_us.main_img' => [
+        'resizes' => ['preview']
+    ],
+    'our_partners_list.img' => [
+        'resizes' => ['preview']
+    ],
 
 ];

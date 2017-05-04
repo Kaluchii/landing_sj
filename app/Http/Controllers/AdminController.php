@@ -12,7 +12,16 @@ class AdminController extends Controller
     private $extract;
     public function __construct(ExtractAgent $ext){
         $this->extract = $ext;
-//        $this->extract->tuneSelection('slider')->sortBy('id','DESC');
+        $this->extract->tuneSelection('facts')->sortBy('id','DESC');
+        $this->extract->tuneSelection('facts_in_fig')->sortBy('id','DESC');
+        $this->extract->tuneSelection('principles_list')->sortBy('id','DESC');
+        $this->extract->tuneSelection('objectives_list')->sortBy('id','DESC');
+        $this->extract->tuneSelection('leaders_list')->sortBy('id','DESC');
+        $this->extract->tuneSelection('support_list')->sortBy('id','DESC');
+        $this->extract->tuneSelection('plans_list')->sortBy('id','DESC');
+        $this->extract->tuneSelection('partners_list')->sortBy('id','DESC');
+        $this->extract->tuneSelection('components_list')->sortBy('id','DESC');
+        $this->extract->tuneSelection('our_partners_list')->sortBy('id','DESC');
     }
 
     public function getIndex(){

@@ -92,45 +92,6 @@ return [
     ],
 
 
-    /*'package_chemp' => [
-        'string' => ['block_title'],
-
-        'groups' => [
-            'chemp_components_list' => [
-                'image' => ['img'],
-                'string' => ['item_title'],
-                'text' => ['text']
-            ]
-        ]
-    ],
-
-
-    'package_veteran' => [
-        'string' => ['block_title'],
-
-        'groups' => [
-            'veteran_components_list' => [
-                'image' => ['img'],
-                'string' => ['item_title'],
-                'text' => ['text']
-            ]
-        ]
-    ],
-
-
-    'package_start' => [
-        'string' => ['block_title'],
-
-        'groups' => [
-            'start_components_list' => [
-                'image' => ['img'],
-                'string' => ['item_title'],
-                'text' => ['text']
-            ]
-        ]
-    ],*/
-
-
     'packages' => [
         'groups' => [
             'package_type' => [

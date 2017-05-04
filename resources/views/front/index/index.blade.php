@@ -102,7 +102,7 @@
             <ul class="leaders__list three-elem-list">
                 @foreach($leaders->leaders_list_group as $item)
                     <li class="three-elem-list__item info-block info-block--with-img">
-                        <img src="{{$leaders->img_field->link}}" alt="{{$leaders->img_field->alt}}" class="info-block__img info-block__img--move">
+                        <img src="{{$item->img_field->link}}" alt="{{$item->img_field->alt}}" class="info-block__img info-block__img--move">
                         <div class="info-block__text-wrap">
                             <h3 class="info-block__title">{!! $item->item_title_field !!}</h3>
                             <p class="info-block__text">{!! $item->text_field !!}</p>
@@ -194,58 +194,6 @@
             </div>
             <?php $j++ ?>
         @endforeach
-        {{--<div class="package package--darker">
-            <div class="package__wrap-1080">
-                <h2 class="package__block-title block-title">{!! $package_veteran->block_title_field !!}</h2>
-                <ul class="package__components-list components-list">
-                    <?php $i = 1 ?>
-                    @foreach($package_veteran->veteran_components_list_group as $item)
-                        @if( $i < 4 )
-                            <li class="components-list__item info-block info-block--with-img">
-                                <img src="{{$item->img_field->link}}" alt="{{$item->img_field->alt}}" class="info-block__img info-block__img--move">
-                                <div class="info-block__text-wrap">
-                                    <h3 class="info-block__title">{{ $i }}.<br>{!! $item->item_title_field !!}</h3>
-                                    <p class="info-block__text">{{ $item->text_field  }}</p>
-                                </div>
-                            </li>
-                        @else
-                            <li class="components-list__item @if($i == 4) components-list__item--520 @else components-list__item--490 @endif info-block">
-                                <img src="{{$item->img_field->link}}" alt="{{$item->img_field->alt}}" class="info-block__img">
-                                <h3 class="info-block__title">{{ $i }}.<br>{!! $item->item_title_field !!}</h3>
-                                <p class="info-block__text">{{ $item->text_field  }}</p>
-                            </li>
-                        @endif
-                        <?php $i++ ?>
-                    @endforeach
-                </ul>
-            </div>
-        </div>
-        <div class="package package--lighter">
-            <div class="package__wrap-1080">
-                <h2 class="package__block-title block-title">{!! $package_start->block_title_field !!}</h2>
-                <ul class="package__components-list components-list">
-                    <?php $i = 1 ?>
-                    @foreach($package_start->start_components_list_group as $item)
-                        @if( $i < 4 )
-                            <li class="components-list__item info-block info-block--with-img">
-                                <img src="{{$item->img_field->link}}" alt="{{$item->img_field->alt}}" class="info-block__img info-block__img--move">
-                                <div class="info-block__text-wrap">
-                                    <h3 class="info-block__title">{{ $i }}.<br>{!! $item->item_title_field !!}</h3>
-                                    <p class="info-block__text">{{ $item->text_field  }}</p>
-                                </div>
-                            </li>
-                        @else
-                            <li class="components-list__item @if($i == 4) components-list__item--520 @else components-list__item--490 @endif info-block">
-                                <img src="{{$item->img_field->link}}" alt="{{$item->img_field->alt}}" class="info-block__img">
-                                <h3 class="info-block__title">{{ $i }}.<br>{!! $item->item_title_field !!}</h3>
-                                <p class="info-block__text">{{ $item->text_field  }}</p>
-                            </li>
-                        @endif
-                        <?php $i++ ?>
-                    @endforeach
-                </ul>
-            </div>
-        </div>--}}
     </section>
 
 
