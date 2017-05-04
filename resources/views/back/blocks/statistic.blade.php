@@ -24,7 +24,7 @@
             </div>
 
             <div class="form-group">
-                <label>Изображение</label>
+                <label>Изображение (820 x 540 px)</label>
                 <div class="dropzone">
                     <div class="file-input">
                         <div class="file-preview">

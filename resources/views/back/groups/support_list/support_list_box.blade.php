@@ -7,7 +7,7 @@
     <div class="box-body">
 
         <div class="form-group">
-            <label>Логотип</label>
+            <label>Логотип (200 x 130 px)</label>
             <div class="dropzone">
                 <div class="file-input">
                     <div class="file-preview">
