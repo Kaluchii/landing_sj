@@ -1,6 +1,6 @@
 <div class="box">
     <div class="box-header with-border">
-        <h3 class="box-title">Пункт {{$item->sorter_field}}</h3>
+        <h3 class="box-title">Лидер {{$item->sorter_field}}</h3>
         <button type="submit" class="btn btn-primary pull-right remove-flat-item" data-id="{{$item->id_field}}"
                 data-block="leaders_list">Удалить</button>
     </div>
@@ -46,7 +46,7 @@
         </div>
 
         <div class="form-group">
-            <label>Заголовок</label>
+            <label>Имя</label>
             <input class="form-control string"
                    type="text" placeholder=""
                    value="{{$item->item_title_field}}"

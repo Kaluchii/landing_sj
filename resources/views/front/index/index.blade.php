@@ -71,7 +71,7 @@
             </div>
         </div>
         <div class="statistic__sj-grow">
-            <p class="statistic__sj-grow-text">{{$statistic->text_on_green_field}}</p>
+            <p class="statistic__sj-grow-text">{!! $statistic->text_on_green_field !!}</p>
         </div>
     </section>
 
@@ -193,7 +193,7 @@
     <section class="packages">
         <?php $j = 1 ?>
         @foreach($packages->package_type_group as $package)
-            <div class="package @if( $j / 2 == 0 ) package--darker @else package--lighter @endif">
+            <div class="package @if( $j % 2 == 0 ) package--darker @else package--lighter @endif">
                 <div class="package__wrap-1080">
                     @if( $j == 1 ) <h2 class="package__blocks-title">СПОНСОРСКИЕ ПАКЕТЫ</h2> @endif
                     <h2 class="package__block-title package__block-title--top-indent block-title">
