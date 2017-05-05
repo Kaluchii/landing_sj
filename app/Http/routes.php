@@ -13,6 +13,8 @@
 
 Route::get('/',         'FrontController@getIndex');
 
+Route::post('/captcha',          'Back\MailController@Captcha');
+Route::post('/feedback/mail',    'Back\MailController@send');
 
 Route::auth();
 Route::group(['middleware' => 'auth', 'prefix' => 'adm'],function(){

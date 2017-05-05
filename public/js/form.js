@@ -1,9 +1,9 @@
 /* Форма должна иметь класс .form
-Идентификатор должен находиться у формы или попапа,
-    элементу с идентификатором прописать класс .form-id
-Каждое поле ввода должно иметь класс .form-input
-Каждая ссылка для открытия попапа должна содержать класс .open_popup,
-    а в свойстве href должна содержать /mail/id_попапа */
+ Идентификатор должен находиться у формы или попапа,
+ элементу с идентификатором прописать класс .form-id
+ Каждое поле ввода должно иметь класс .form-input
+ Каждая ссылка для открытия попапа должна содержать класс .open_popup,
+ а в свойстве href должна содержать /mail/id_попапа */
 
 $(document).ready(function(){
     $('.thank').magnificPopup({
@@ -39,7 +39,7 @@ $(document).ready(function(){
 
     // Проверка почты на соответствие маске *@*.*
     function isEmail( mail ){
-        regex = /\S+@\S+/igm;
+        var regex = /\S+@\S+/igm;
         return regex.test(mail);
     }
 
@@ -84,12 +84,38 @@ $(document).ready(function(){
             }
             parent.addClass('valid');
 
+            if( input.hasClass('form-name') ){
+                $('.img-name').addClass('visible');
+            }
+            if( input.hasClass('form-phone') ){
+                $('.img-phone').addClass('visible');
+            }
+            if( input.hasClass('form-mail') ){
+                $('.img-mail').addClass('visible');
+            }
+            if( input.hasClass('form-question') ){
+                $('.img-question').addClass('visible');
+            }
+
             return true;
         } else {
             if( parent.hasClass('valid') ){
                 parent.removeClass('valid')
             }
             parent.addClass('error');
+
+            if( input.hasClass('form-name') ){
+                $('.img-name').removeClass('visible');
+            }
+            if( input.hasClass('form-phone') ){
+                $('.img-phone').removeClass('visible');
+            }
+            if( input.hasClass('form-mail') ){
+                $('.img-mail').removeClass('visible');
+            }
+            if( input.hasClass('form-question') ){
+                $('.img-question').removeClass('visible');
+            }
 
             return false;
         }
@@ -125,56 +151,94 @@ $(document).ready(function(){
     function addFields( selector, object ){
 
         $(selector).each(function () {
-            $this = $(this);
+            var $this = $(this);
 
             object[$this.attr('name')] = $this.val();
         });
     }
 
+    function ajaxDataSend(type, url, data, headers) {
+        headers = headers || {};
+        return $.ajax(
+            {
+                type: type,
+                url: url,
+                dataType: 'json',
+                data: data,
+                headers: headers
+            }
+        );
+    }
 
+    window.onSubmitReCaptcha = function (token) {
+        active = false;
+        sendButton.addClass('load');
+
+        console.log('Captcha test start');
+        var csrfT = {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')};
+        var cResponse = {'g-recaptcha-response': grecaptcha.getResponse()};
+
+        var capchaTest = ajaxDataSend('POST', '/captcha', cResponse, csrfT);
+
+        capchaTest.success(function(data){
+            if( data.error ){
+                alert('Проверка не пройдена!');
+                sendButton.removeClass('load');
+                active = true;
+            }else{
+                console.log('CaptchaTest success');
+                sendForm();
+            }
+        });
+        capchaTest.error(function(data){
+            alert('При отправке сообщения произошла ошибка');
+            console.log('CaptchaTest error');
+            sendButton.removeClass('load');
+            active = true;
+        });
+    };
+
+
+    var unical, sendButton, selector;
     var active = true;
-    $('.send-form').on('click',function() {
-        if( active ){
-            unical = $(this).closest('.form-id').attr('id');
-            active = false;
-            var $this = $(this);
-            var dataobj = {};
 
-            var selector = '#'+unical+' .form-input';
+    function finalValidation() {
+        if( active ){
+            sendButton = $(this);
+            unical = sendButton.closest('.form-id').attr('id');
+            selector = '#'+unical+' .form-input';
+
             var validForm  = fieldsCheck( selector );
 
             if ( validForm ){
-                addFields( selector, dataobj );
-
-                var deferred = $.ajax(
-                    {
-                        type: 'POST',
-                        url: '/feedback/mail',
-                        dataType: 'json',
-                        data: dataobj
-                    }
-                );
-
-                $this.addClass('load');
-
-                deferred.success(function(data){
-                    if(!data.error){
-                        $('.thank').click();
-                        active = true;
-                        clearFields( selector );
-                        $this.removeClass('load');
-                    }
-                });
-                deferred.error(function(data){
-                    console.log(data);
-                    $this.removeClass('load');
-                });
-
-            }else{
-                active = true;
+                grecaptcha.reset();
+                grecaptcha.execute();
             }
-
         }
+    }
 
-    });
+    $('.send-form').on('click', finalValidation);
+
+
+    function sendForm() {
+
+        var dataobj = {};
+
+        addFields( selector, dataobj );
+
+        var response = ajaxDataSend('POST', '/feedback/mail', dataobj);
+        response.success(function(data){
+            if(!data.error){
+                $('.thank').click();
+                clearFields( selector );
+            }
+            sendButton.removeClass('load');
+            active = true;
+        });
+        response.error(function(data){
+            console.log(data);
+            sendButton.removeClass('load');
+            active = true;
+        });
+    }
 });

@@ -178,7 +178,7 @@
                 </h2>
                 <div class="information__text">{!! $information->text_field !!}</div>
                 <div class="information__give-offer-wrap">
-                    <a href="#" class="information__give-offer-btn">Получить предложение</a>
+                    <a href="#partner" class="information__give-offer-btn open_feedback">Получить предложение</a>
                 </div>
             </div>
             <ul class="information__images-list images-list">

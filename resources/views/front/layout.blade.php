@@ -24,7 +24,7 @@
 
     @include('front.popups.ask')
     @include('front.popups.thank')
-    <a href="/mail/thanks" class="thank open_popup"></a>
+    <a href="#thanks" class="thank open_popup"></a>
 </div>
 @include('front.scripts')
 @include('front.metriks')
