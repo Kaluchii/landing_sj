@@ -7,7 +7,7 @@
     <div class="box-body">
 
         <div class="form-group">
-            <label>Загловок (число)</label>
+            <label>Заголовок (число)</label>
             <input class="form-control string"
                    type="text" placeholder=""
                    value="{{$item->number_field}}"

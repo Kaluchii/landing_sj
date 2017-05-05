@@ -200,9 +200,9 @@
                         {!! wrap_in_tag($package->block_title_field, '<span class="thin-green">', '</span>') !!}
                     </h2>
                     <ul class="package__components-list components-list">
-                        <?php $i = 1 ?>
-                        @foreach($package->components_list_group as $item)
-                            @if( $i < 4 )
+                        @for($i = 1; $i <=5; $i++)
+                            <?php $item = $package->components_list_group->current(); ?>
+                            @if( $i <= 3 )
                                 <li class="components-list__item info-block info-block--with-img">
                                     <img src="{{$item->img_field->link}}" alt="{{$item->img_field->alt}}" class="info-block__img info-block__img--move">
                                     <div class="info-block__text-wrap">
@@ -215,10 +215,16 @@
                                     <img src="{{$item->img_field->link}}" alt="{{$item->img_field->alt}}" class="info-block__img">
                                     <h3 class="info-block__title">{{ $i }}.<br>{!! wrap_in_tag($item->item_title_field, '<span class="reg-green">', '</span>') !!}</h3>
                                     <p class="info-block__text">{{ $item->text_field  }}</p>
+                                    @if( $i == 5 )
+                                        <?php $package->components_list_group->next(); ?>
+                                        <?php $item = $package->components_list_group->current(); ?>
+                                        <h3 class="info-block__title info-block__title--top-indent">6.<br>{!! wrap_in_tag($item->item_title_field, '<span class="reg-green">', '</span>') !!}</h3>
+                                        <p class="info-block__text">{{ $item->text_field  }}</p>
+                                    @endif
                                 </li>
                             @endif
-                            <?php $i++ ?>
-                        @endforeach
+                            <?php if($i <= 5){$package->components_list_group->next();} ?>
+                        @endfor
                     </ul>
                 </div>
             </div>

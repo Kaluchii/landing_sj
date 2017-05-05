@@ -12,7 +12,7 @@
         <div class="box-body">
 
             <div class="form-group">
-                <label>Заголовок</label>
+                <label>Заголовок (Используйте # для обозначения начала и конца зеленого текста)</label>
                 <input class="form-control string"
                        type="text" placeholder=""
                        value="{{$block->block_title_field}}"

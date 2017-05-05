@@ -46,7 +46,7 @@
         </div>
 
         <div class="form-group">
-            <label>Заголовок</label>
+            <label>Заголовок (Используйте # для обозначения начала и конца зеленого текста)</label>
             <input class="form-control string"
                    type="text" placeholder=""
                    value="{{$item->item_title_field}}"
