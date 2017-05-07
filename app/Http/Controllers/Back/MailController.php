@@ -25,7 +25,7 @@ class MailController extends Controller
         $this->feedback = $feedback;
         // Объявляем все шаблоны писем для форм
 
-        $this->feedback->setBodyTemplate('ask', 'back/mail/ask_mail');
+        $this->feedback->setBodyTemplate('sponsor_form', 'back/mail/sponsor_form_mail');
 
     }
 
@@ -34,7 +34,6 @@ class MailController extends Controller
             $data = $request->all();
 
             $form = array_pull($data, 'form');
-            array_except($data, '_token');
 
             $this->feedback->mail($form, $data);
             return ['error' => false];
@@ -46,7 +45,7 @@ class MailController extends Controller
     public function Captcha( Request $request )
     {
         $data = $request->all();
-        $secret = '6LevTh8UAAAAANlvzu3qAULpWZFdM3HivGPA8kKe';
+        $secret = '6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe';
         $recaptcha = new ReCaptcha($secret);
         $resp = $recaptcha->verify($data['g-recaptcha-response'], $_SERVER['REMOTE_ADDR']);
         if ($resp->isSuccess()) {

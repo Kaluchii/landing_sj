@@ -22,9 +22,9 @@
 </div>
 <div class="hide">
 
-    @include('front.popups.ask')
+    @include('front.popups.sponsor_form')
     @include('front.popups.thank')
-    <a href="#thanks" class="thank open_popup"></a>
+    <a href="#thanks" class="thank"></a>
 </div>
 @include('front.scripts')
 @include('front.metriks')

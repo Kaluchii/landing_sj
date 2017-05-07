@@ -18,21 +18,21 @@ $(document).ready(function(){
     });
 
     // Изменение адреса ссылок для открытия попапов
-    $('.open_popup').each(function () {
+    /*$('.open_popup').each(function () {
         var $this = $(this);
         var href = $this.attr('href');
         if (href[0] == '/'){
             $this.attr('href', '#' + href.substr(6));
         }
-    });
+    });*/
 
     // Отмена встроенной браузерной валидации форм
-    $('.form').each(function () {
+    /*$('.form').each(function () {
         $(this).attr('novalidate', '')
     });
-
+*/
     // Предотвращение отправки формы через php при нажатии на кнопку
-    $('.form').submit(function (e) {
+    $('form').submit(function (e) {
         e.stopPropagation();
         e.preventDefault();
     });
@@ -47,7 +47,7 @@ $(document).ready(function(){
     // Очистка формы
     function clearFields( selector ){
         $(selector).each(function(){
-            if( $(this).attr('name') != 'form' && $(this).attr('name') != '_token'){
+            if( $(this).attr('name') != 'form'){
                 $(this).val('');
                 $(this).parent().removeClass('valid');
             }
@@ -84,38 +84,12 @@ $(document).ready(function(){
             }
             parent.addClass('valid');
 
-            if( input.hasClass('form-name') ){
-                $('.img-name').addClass('visible');
-            }
-            if( input.hasClass('form-phone') ){
-                $('.img-phone').addClass('visible');
-            }
-            if( input.hasClass('form-mail') ){
-                $('.img-mail').addClass('visible');
-            }
-            if( input.hasClass('form-question') ){
-                $('.img-question').addClass('visible');
-            }
-
             return true;
         } else {
             if( parent.hasClass('valid') ){
                 parent.removeClass('valid')
             }
             parent.addClass('error');
-
-            if( input.hasClass('form-name') ){
-                $('.img-name').removeClass('visible');
-            }
-            if( input.hasClass('form-phone') ){
-                $('.img-phone').removeClass('visible');
-            }
-            if( input.hasClass('form-mail') ){
-                $('.img-mail').removeClass('visible');
-            }
-            if( input.hasClass('form-question') ){
-                $('.img-question').removeClass('visible');
-            }
 
             return false;
         }
@@ -133,7 +107,7 @@ $(document).ready(function(){
 
 
     // Проверка полей формы на отсутствие пустых полей и валидность
-    function  fieldsCheck( selector ){
+    function fieldsCheck( selector ){
         var checked = true;
         var focus = true;
         $(selector).each( function () {
@@ -157,15 +131,16 @@ $(document).ready(function(){
         });
     }
 
-    function ajaxDataSend(type, url, data, headers) {
-        headers = headers || {};
+    function ajaxDataSend(type, url, data) {
         return $.ajax(
             {
                 type: type,
                 url: url,
                 dataType: 'json',
                 data: data,
-                headers: headers
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
             }
         );
     }
@@ -175,10 +150,9 @@ $(document).ready(function(){
         sendButton.addClass('load');
 
         console.log('Captcha test start');
-        var csrfT = {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')};
         var cResponse = {'g-recaptcha-response': grecaptcha.getResponse()};
 
-        var capchaTest = ajaxDataSend('POST', '/captcha', cResponse, csrfT);
+        var capchaTest = ajaxDataSend('POST', '/captcha', cResponse);
 
         capchaTest.success(function(data){
             if( data.error ){

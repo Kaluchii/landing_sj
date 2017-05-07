@@ -9,26 +9,16 @@
   position: relative;
   box-sizing: border-box;
   margin: 20px auto;
-  /*border: 3px solid #ff9530;
-  padding: 40px;
-  max-width: 400px;
+  border: 3px solid #16afff;
+  padding: 35px 30px;
+  max-width: 380px;
   border-radius: 15px;
-  background: #FFF;*/
-
-  &--box{
-    padding: 25px 30px 175px;
-    max-width: 708px;
-    background: url("/img/box.png") no-repeat top / 100%;
-    border-radius: 0;
-  }
+  background: #FFF;
 
   &--send-status {
     max-width: 360px;
     padding: 30px 20px;
     text-align: center;
-    border: 3px solid #16afff;
-    border-radius: 15px;
-    background: #FFF;
   }
 
   &__title {
@@ -55,9 +45,8 @@
   }
 
   &__form{
-    /*max-width: 310px;*/
-    max-width: 248px;
-    margin: 100px auto 0;
+    max-width: 310px;
+    margin: 30px auto 0;
   }
 }
 
@@ -76,9 +65,9 @@
 .form-row{
   &__name{
     position: relative;
-    /*font-size: 20px;
+    font-size: 20px;
     margin-top: 15px;
-    color: #333333;*/
+    color: #333333;
 
     &:hover {
       .form-row__validation-wrap {
@@ -128,10 +117,9 @@
     border: 1px solid #8b7662;
     border-radius: 4px;
     padding: 10.5px 10px;
-    font-size: 16px;
+    font-size: 18px;
     margin: 3px;
-    /*max-width: 286px;*/
-    max-width: 220px;
+    max-width: 282px;
 
     &--textarea {
       resize: none;
@@ -153,7 +141,7 @@
     display: none;
     position: absolute;
     z-index: 3;
-    left: 260px;
+    left: 323px;
     top: 50%;
     transform: translateY(-50%);
     max-width: 270px;
@@ -165,6 +153,7 @@
     position: relative;
     font-size: 14px;
     background-color: #fff;
+    color: #999999;
     box-shadow: 0 3px 6px #8b7662;
     border-radius: 5px;
     font-weight: normal;
@@ -197,9 +186,8 @@
     background-color: #137cc0;
     font-weight: 900;
     border-radius: 4px;
-    /*padding: 15px 27px;*/
-
-    padding: 11px 17px;
+    width: 120px;
+    height: 40px;
 
     &:hover {
       background-color: #1491c4;
@@ -210,10 +198,7 @@
       background: url(../img/default.svg) center center no-repeat, rgba(170, 170, 170, 0.8);
       background-size: 28px 28px;
       color: transparent;
-      width: 120px;
-      height: 40px;
       cursor: default;
-      padding: 0;
     }
   }
 }
@@ -227,7 +212,7 @@
   }
 }
 
-@media screen and (max-width: 810px) {
+@media screen and (max-width: 890px) {
   .form-row{
     &__tooltip-wrap{
       margin: 0 4px;
@@ -250,34 +235,26 @@
   }
 }
 
-@media screen and (max-width: 710px){
-  .white-popup{
-    &--box {
-      background: url("/img/box.png") no-repeat top / 100% 100%;
-    }
-  }
-}
-
-@media screen and (max-width: 460px){
-  .white-popup{
-    &--box {
-      background: url("/img/box.png") no-repeat top / 140% 100%;
-    }
-  }
-}
-
 @media screen and (max-width: 420px){
   .white-popup{
+    padding: 15px 10px 25px;
+
     &__title {
       font-size: 32px;
     }
-  }
-}
 
-@media screen and (max-width: 420px){
-  .white-popup{
     &--send-status {
       margin: 20px;
+    }
+
+    &__form{
+      max-width: 270px;
+    }
+  }
+
+  .form-row{
+    &__input{
+      max-width: 242px;
     }
   }
 }

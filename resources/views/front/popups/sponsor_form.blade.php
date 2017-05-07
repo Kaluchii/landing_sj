@@ -1,17 +1,15 @@
-<div class="white-popup white-popup--box mfp-with-anim mfp-hide form-id" id="partner">
-    <h4 class="white-popup__title">Стать партнером</h4>
-    <div {{--action="/feedback/mail" method="POST" name="partner" autocomplete="off"--}}
-         class="white-popup__form feedback-form form">
+<div class="white-popup mfp-with-anim mfp-hide form-id" id="sponsor_form">
+    <h4 class="white-popup__title">Спонсорское предложение</h4>
+    <form {{--novalidate action="/feedback/mail" method="POST" name="partner" autocomplete="off"--}}
+         class="white-popup__form feedback-form">
         {{--Передача Названия формы--}}
-        <input type="hidden" name="form" class="form-input" value="partner">
-        {{--Передача csrf-токена--}}
-        <input type="hidden" name="_token" class="form-input" value="{{ csrf_token() }}">
+        <input type="hidden" name="form" class="form-input" value="sponsor_form">
 
         <div class="feedback-form__row form-row">
             <label class="form-row__name">
                 <span class="form-row__label">Имя</span>
                 <div class="form-row__validation-wrap">
-                    <input type="text" name="client_name" required class="form-row__input form-input" autofocus>
+                    <input type="text" name="sponsor_name" required class="form-row__input form-input" autofocus>
                     <div class="form-row__tooltip-wrap"><p class="form-row__tooltip">Если хотите, мы будем звать Вас
                             Эдуард</p></div>
                 </div>
@@ -56,10 +54,14 @@
             </label>
         </div>
 
+        <div id="recaptcha" class="g-recaptcha" data-size="invisible"
+             data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+             data-callback="onSubmitReCaptcha"></div>
+
         <div class="feedback-form__row form-row feedback-form__row--right-flag">
             <span class="form-row__name">
                 <input type="submit" value="Отправить" class="form-row__send-form send-form">
             </span>
         </div>
-    </div>
+    </form>
 </div>
