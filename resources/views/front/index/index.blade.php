@@ -195,8 +195,12 @@
         @foreach($packages->package_type_group as $package)
             <div class="package @if( $j % 2 == 0 ) package--darker @else package--lighter @endif">
                 <div class="package__wrap-1080">
-                    @if( $j == 1 ) <h2 class="package__blocks-title">СПОНСОРСКИЕ ПАКЕТЫ</h2> @endif
-                    <h2 class="package__block-title package__block-title--top-indent block-title">
+                    @if( $j == 1 )
+                        <h2 class="package__blocks-title">СПОНСОРСКИЕ ПАКЕТЫ</h2>
+                        <h2 class="package__block-title package__block-title--top-indent block-title">
+                    @else
+                        <h2 class="package__block-title block-title">
+                    @endif
                         {!! wrap_in_tag($package->block_title_field, '<span class="thin-green">', '</span>') !!}
                     </h2>
                     <ul class="package__components-list components-list">
