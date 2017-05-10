@@ -1,6 +1,6 @@
 <div class="white-popup mfp-with-anim mfp-hide form-id" id="sponsor_form">
     <h4 class="white-popup__title">Спонсорское предложение</h4>
-    <form {{--novalidate action="/feedback/mail" method="POST" name="partner" autocomplete="off"--}}
+    <form novalidate {{--action="/feedback/mail" method="POST" name="partner" autocomplete="off"--}}
          class="white-popup__form feedback-form">
         {{--Передача Названия формы--}}
         <input type="hidden" name="form" class="form-input" value="sponsor_form">
