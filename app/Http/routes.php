@@ -38,11 +38,15 @@ Route::group(['middleware' => 'auth', 'prefix' => 'adm'],function(){
     Route::get('/information',         'AdminController@getInformation');
 
     Route::get('/packages',            'AdminController@getPackages');
-    Route::get('/packages/{id}',        'AdminController@getPackagesItem');
+    Route::get('/packages/{id}',       'AdminController@getPackagesItem');
 
     Route::get('/contact_us',          'AdminController@getContact');
 
     Route::get('/footer',              'AdminController@getFooter');
+
+    Route::get('/meta',                'AdminController@getIndexMeta');
+
+    Route::get('/scripts',             'AdminController@getScripts');
 
 
 

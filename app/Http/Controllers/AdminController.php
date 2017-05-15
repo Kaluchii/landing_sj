@@ -111,4 +111,18 @@ class AdminController extends Controller
             'block' => $block
         ]);
     }
+
+    public function getIndexMeta(){
+        $block = $this->extract->getBlock('titular');
+        return view('back.blocks.index_meta', [
+            'block' => $block
+        ]);
+    }
+
+    public function getScripts(){
+        $block = $this->extract->getBlock('scripts');
+        return view('back.blocks.scripts', [
+            'block' => $block
+        ]);
+    }
 }

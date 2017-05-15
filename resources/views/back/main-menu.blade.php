@@ -53,8 +53,18 @@
                 </a>
             </li>
             <li>
+                <a href="/adm/meta">
+                    <i class="fa fa-chrome"></i> <span>Мета данные</span>
+                </a>
+            </li>
+            <li>
                 <a href="/adm/footer">
                     <i class="fa fa-chrome"></i> <span>Футер</span>
+                </a>
+            </li>
+            <li>
+                <a href="/adm/scripts">
+                    <i class="fa fa-chrome"></i> <span>Скрипты</span>
                 </a>
             </li>
 

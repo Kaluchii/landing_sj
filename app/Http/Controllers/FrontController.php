@@ -19,7 +19,11 @@ class FrontController extends Controller
         $this->extract = $ext;
         $this->extract->tuneSelection('package_type')->sortBy('sorter','ASC');
         $footer = $this->extract->getBlock('footer');
-        view()->share('footer', $footer);
+        $scripts = $this->extract->getBlock('scripts');
+        view()->share([
+            'footer' => $footer,
+            'scripts' => $scripts,
+        ]);
     }
 
 
