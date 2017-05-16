@@ -4,10 +4,10 @@
             <div class="footer__socials socials">
                 <h4 class="socials__title">МЫ В СОЦИАЛЬНЫХ СЕТЯХ</h4>
                 <ul class="socials__links-list">
-                    <li class="socials__item"><a href="#" class="socials__link link">ВКОНТАКТЕ</a></li>
-                    <li class="socials__item"><a href="#" class="socials__link link">ИНСТАГРАММ</a></li>
-                    <li class="socials__item"><a href="#" class="socials__link link">ФЕЙСБУК</a></li>
-                    <li class="socials__item"><a href="#" class="socials__link link">ЮТУБ</a></li>
+                    <li class="socials__item"><a target="_blank" href="https://vk.com/summerjamkz" class="socials__link link">ВКОНТАКТЕ</a></li>
+                    <li class="socials__item"><a target="_blank" href="https://www.instagram.com/summer_jam_kz/" class="socials__link link">ИНСТАГРАММ</a></li>
+                    <li class="socials__item"><a target="_blank" href="#" class="socials__link link">ФЕЙСБУК</a></li>
+                    <li class="socials__item"><a target="_blank" href="https://www.youtube.com/user/McLuCkEr13/playlists" class="socials__link link">ЮТУБ</a></li>
                 </ul>
             </div>
             <div class="footer__partners partners">
