@@ -22,25 +22,28 @@
             </div>
             <div class="index-header__inf-wrap">
                 <div class="index-header__inf">
-                    <img src="/img/40x60.jpg" alt="" class="index-header__inf-img">
+                    <img src="/img/SLK.png" alt="" class="index-header__inf-img">
                     <p class="index-header__inf-text">При поддержке Стритбольной Лиги Казахстана</p>
                 </div>
                 <div class="index-header__inf">
-                    <img src="/img/70x40.jpg" alt="" class="index-header__inf-img index-header__inf-img--longer">
+                    <img src="/img/3x3.png" alt="" class="index-header__inf-img index-header__inf-img--longer">
                     <p class="index-header__inf-text index-header__inf-text--longer">Турнир соответствует международному регламенту FIBA 3X3</p>
                 </div>
             </div>
         </div>
+        <h1 class="index-header__block-title">
+            {!! wrap_in_tag($titular->block_title_field, '<span class="thin-green">', '</span>') !!}
+        </h1>
     </section>
 
 
     <section class="titular">
         <div class="titular__wrap-1220">
-            <h1 class="titular__block-title">
-                {!! wrap_in_tag($titular->block_title_field, '<span class="thin-green">', '</span>') !!}
-            </h1>
-            <div class="titular__media-wrap media">
-                <img src="{{$titular->main_img_field->link}}" alt="{{$titular->main_img_field->alt}}" class="media__img">
+            <div class="titular__media-wrap media element-with-video-bg jquery-background-video-wrapper">
+                {{--<img src="{{$titular->main_img_field->link}}" alt="{{$titular->main_img_field->alt}}" class="media__img">--}}
+                <video autoplay loop muted data-bgvideo="true" poster="" class="media__video my-background-video jquery-background-video">
+                    <source src="dev_source/video/SUMMER JAM 2016.webm" type="video/webm">
+                </video>
             </div>
             <ul class="titular__facts facts">
                 @foreach($titular->facts_group as $item)

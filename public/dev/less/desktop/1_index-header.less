@@ -1,12 +1,21 @@
 .index-header{
-  background-color: #28323c;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
 
   &__wrap-1170{
     display: flex;
     justify-content: space-between;
     max-width: 1170px;
     margin: 0 auto;
-    padding: 40px 40px 20px 70px;
+    padding: 40px 20px 20px;
+  }
+
+  &__block-title{
+    max-width: 600px;
+    margin: 50px auto 0;
+    padding: 0 20px;
+    text-align: center;
   }
 
   &__inf-wrap{
@@ -33,6 +42,7 @@
     max-width: 100px;
     margin-left: 20px;
     font-size: 12px;
+    color: #FFFFFF;
 
     &--longer{
       max-width: 130px;
