@@ -1,5 +1,5 @@
 <div class="white-popup mfp-with-anim mfp-hide form-id" id="sponsor_form">
-    <h4 class="white-popup__title">Спонсорское предложение</h4>
+    <h4 class="white-popup__title">Получить предложение</h4>
     <form novalidate {{--action="/feedback/mail" method="POST" name="partner" autocomplete="off"--}}
          class="white-popup__form feedback-form">
         {{--Передача Названия формы--}}
@@ -10,8 +10,7 @@
                 <span class="form-row__label">Имя</span>
                 <div class="form-row__validation-wrap">
                     <input type="text" name="sponsor_name" required class="form-row__input form-input" autofocus>
-                    <div class="form-row__tooltip-wrap"><p class="form-row__tooltip">Если хотите, мы будем звать Вас
-                            Эдуард</p></div>
+                    <div class="form-row__tooltip-wrap"><p class="form-row__tooltip form-row__tooltip--border">Как к вам обращаться</p></div>
                 </div>
             </label>
         </div>
@@ -27,7 +26,7 @@
                            maxlength="25"
                            required
                            name="phone">
-                    <div class="form-row__tooltip-wrap"><p class="form-row__tooltip">Укажите номер для связи</p></div>
+                    <div class="form-row__tooltip-wrap"><p class="form-row__tooltip form-row__tooltip--border">Телефонный номер для связи</p></div>
                 </div>
             </label>
         </div>
@@ -37,8 +36,8 @@
                 <span class="form-row__label">Эл. почта</span>
                 <div class="form-row__validation-wrap">
                     <input type="email" name="email" required class="form-row__input form-input">
-                    <div class="form-row__tooltip-wrap"><p class="form-row__tooltip">Электронный адрес в формате
-                            address@mail.com</p></div>
+                    <div class="form-row__tooltip-wrap"><p class="form-row__tooltip form-row__tooltip--border">Электронный адрес в формате
+                            addr@mail.com</p></div>
                 </div>
             </label>
         </div>
@@ -48,8 +47,7 @@
                 <span class="form-row__label">Комментарий</span>
                 <div class="form-row__validation-wrap">
                     <textarea name="question" class="form-row__input form-row__input--textarea form-input"></textarea>
-                    <div class="form-row__tooltip-wrap"><p class="form-row__tooltip">Краткая информация о вашей
-                            компании</p></div>
+                    <div class="form-row__tooltip-wrap"><p class="form-row__tooltip form-row__tooltip--border">Краткий комментарий о вас</p></div>
                 </div>
             </label>
         </div>

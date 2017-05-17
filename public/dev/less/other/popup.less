@@ -114,7 +114,7 @@
 
   &__input{
     width: 100%;
-    border: 1px solid #8b7662;
+    border: 1px solid #aaa;
     border-radius: 4px;
     padding: 10.5px 10px;
     font-size: 18px;
@@ -154,7 +154,6 @@
     font-size: 14px;
     background-color: #fff;
     color: #999999;
-    box-shadow: 0 3px 6px #8b7662;
     border-radius: 5px;
     font-weight: normal;
     text-align: center;
@@ -165,7 +164,6 @@
       content: '';
       position: absolute;
       background-color: #fff;
-      box-shadow: 0 3px 6px #8b7662;
       left: -5px;
       top: ~'calc(50% - 5px)';
       width: 10px;
@@ -175,7 +173,32 @@
     }
     &::before {
       z-index: 1;
-      box-shadow: none;
+    }
+
+    &--shadow{
+      box-shadow: 0 3px 6px #8b7662;
+
+      &::before, &::after{
+        box-shadow: 0 3px 6px #8b7662;
+      }
+
+      &::before{
+        box-shadow: none;
+      }
+    }
+
+    &--border{
+      border: 2px solid #2294dc;
+
+      &::before, &::after{
+        border: 2px solid #2294dc;
+      }
+
+      &::before{
+        left: -3px;
+        top: ~'calc(50% - 3px)';
+        border: none;
+      }
     }
   }
 
@@ -226,10 +249,26 @@
     }
 
     &__tooltip{
-      &::before, &::after {
-        bottom: -5px;
-        top: auto;
-        left: ~'calc(50% - 5px)';
+      &--shadow{
+        &::before, &::after {
+          bottom: -5px;
+          top: auto;
+          left: ~'calc(50% - 5px)';
+        }
+      }
+
+      &--border{
+        &::before, &::after {
+          bottom: -5px;
+          top: auto;
+          left: ~'calc(50% - 5px)';
+        }
+
+        &::before{
+          bottom: -3px;
+          top: auto;
+          left: ~'calc(50% - 3px)';
+        }
       }
     }
   }
