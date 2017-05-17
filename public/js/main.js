@@ -27,4 +27,9 @@ $(document).ready(function () {
 
     $(window).on('resize', MoveBlock);
     $(window).on('load', MoveBlock());
+
+    window.vidplay = function() {
+       var video = document.getElementById("video");
+       video.paused ? video.play() : video.pause();
+    }
 });

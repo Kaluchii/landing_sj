@@ -39,11 +39,12 @@
 
     <section class="titular">
         <div class="titular__wrap-1220">
-            <div class="titular__media-wrap media element-with-video-bg jquery-background-video-wrapper">
+            <div class="titular__media-wrap media">
                 {{--<img src="{{$titular->main_img_field->link}}" alt="{{$titular->main_img_field->alt}}" class="media__img">--}}
-                <video autoplay loop muted data-bgvideo="true" poster="" class="media__video my-background-video jquery-background-video">
+                <video autoplay loop muted data-bgvideo="true" poster="" class="media__video" id="video">
                     <source src="dev_source/video/SUMMER JAM 2016.webm" type="video/webm">
                 </video>
+                <button class="media__play-stop" onclick="vidplay()"></button>
             </div>
             <ul class="titular__facts facts">
                 @foreach($titular->facts_group as $item)

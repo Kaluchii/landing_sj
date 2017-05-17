@@ -39,6 +39,26 @@
     max-width: 100%;
     width: 100%;
   }
+
+  &__play-stop{
+    position: absolute;
+    background: url("/img/play-pause.png") no-repeat center;
+    font-size: 28px;
+    border: 3px solid #FFFFFF;
+    border-radius: 50%;
+    bottom: 30px;
+    left: 40px;
+    width: 40px;
+    height: 40px;
+    z-index: 4;
+    opacity: 0.8;
+    transition: all 0.5s;
+
+    &:hover{
+      opacity: 1;
+      border-radius: 15%;
+    }
+  }
 }
 
 .facts{
