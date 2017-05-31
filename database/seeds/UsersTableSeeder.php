@@ -11,7 +11,11 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-
+        \Illuminate\Support\Facades\DB::table('users')->insert([
+            'name' => 'root',
+            'email' => 'admin@admin.kz',
+            'password' => bcrypt('RerfDfcz'),
+        ]);
         \Illuminate\Support\Facades\DB::table('users')->insert([
             'name' => 'Viktor',
             'email' => 'info@interpro.kz',
@@ -20,7 +24,7 @@ class UsersTableSeeder extends Seeder
         \Illuminate\Support\Facades\DB::table('users')->insert([
             'name' => 'summerjam',
             'email' => 'info@summerjam.kz',
-            'password' => bcrypt('7jam2Pqu4B'),
+            'password' => bcrypt('7jam2'),
         ]);
     }
 }
