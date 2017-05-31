@@ -41,8 +41,8 @@
         <div class="titular__wrap-1220">
             <div class="titular__media-wrap media">
                 <video autoplay loop muted data-bgvideo="true" poster="{{$titular->main_img_field->link}}" class="media__video" id="video">
-                    <source src="{{$titular->video_mp4_field->link}}" type="video/mp4">
-                    <source src="{{$titular->video_webm_field->link}}" type="video/webm">
+                    <source src="/video/SUMMER JAM 2016.mp4" type="video/mp4">
+                    <source src="/video/SUMMER JAM 2016.webm" type="video/webm">
                 </video>
                 <button class="media__play-stop" onclick="vidplay()"></button>
             </div>
