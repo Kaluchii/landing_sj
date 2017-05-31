@@ -40,9 +40,9 @@
     <section class="titular">
         <div class="titular__wrap-1220">
             <div class="titular__media-wrap media">
-                {{--<img src="{{$titular->main_img_field->link}}" alt="{{$titular->main_img_field->alt}}" class="media__img">--}}
-                <video autoplay loop muted data-bgvideo="true" poster="" class="media__video" id="video">
-                    <source src="dev_source/video/SUMMER JAM 2016.webm" type="video/webm">
+                <video autoplay loop muted data-bgvideo="true" poster="{{$titular->main_img_field->link}}" class="media__video" id="video">
+                    <source src="{{$titular->video_mp4_field->link}}" type="video/mp4">
+                    <source src="{{$titular->video_webm_field->link}}" type="video/webm">
                 </video>
                 <button class="media__play-stop" onclick="vidplay()"></button>
             </div>
