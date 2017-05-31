@@ -5,7 +5,6 @@ return [
     'titular' => [
         'string' => ['block_title'],
         'image' => ['main_img'],
-        'file' => ['video_mp4', 'video_webm'],
 
         'groups' => [
             'facts' => [
