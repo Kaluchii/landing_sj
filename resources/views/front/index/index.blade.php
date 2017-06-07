@@ -15,23 +15,23 @@
     }
     ?>
 
-    <section class="index-header">
-        <div class="index-header__wrap-1170">
-            <div class="index-header__logo-wrap">
-                <img src="/img/logo.png" alt="" class="index-header__logo">
+    <section class="second-header second-header--stratification">
+        <div class="second-header__wrap-1170">
+            <div class="second-header__logo-wrap">
+                <img src="/img/logo.png" alt="" class="second-header__logo">
             </div>
-            <div class="index-header__inf-wrap">
-                <div class="index-header__inf">
-                    <img src="/img/SLK.png" alt="" class="index-header__inf-img">
-                    <p class="index-header__inf-text">При поддержке Стритбольной Лиги Казахстана</p>
+            <div class="second-header__inf-wrap">
+                <div class="second-header__inf">
+                    <img src="/img/SLK.png" alt="" class="second-header__inf-img">
+                    <p class="second-header__inf-text">При поддержке Стритбольной Лиги Казахстана</p>
                 </div>
-                <div class="index-header__inf">
-                    <img src="/img/3x3.png" alt="" class="index-header__inf-img index-header__inf-img--longer">
-                    <p class="index-header__inf-text index-header__inf-text--longer">Турнир соответствует международному регламенту FIBA 3X3</p>
+                <div class="second-header__inf">
+                    <img src="/img/3x3.png" alt="" class="second-header__inf-img second-header__inf-img--longer">
+                    <p class="second-header__inf-text second-header__inf-text--longer">Турнир соответствует международному регламенту FIBA 3X3</p>
                 </div>
             </div>
         </div>
-        <h1 class="index-header__block-title">
+        <h1 class="second-header__block-title">
             {!! wrap_in_tag($titular->block_title_field, '<span class="thin-green">', '</span>') !!}
         </h1>
     </section>

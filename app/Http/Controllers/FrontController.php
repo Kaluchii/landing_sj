@@ -62,4 +62,27 @@ class FrontController extends Controller
             'guarantee' => $guarantee,
         ]);*/
     }
+
+    public function getPlayers( $page_slug = null ){
+        try {
+            if (!is_null($page_slug)) {
+                $inf_page = $this->extract->getBySlug('pl_info_page', $page_slug);
+            } else {
+                $inf_pages = $this->extract->getBlock('for_players');
+                if ($inf_pages->pl_info_page_group->count() > 0) {
+                    $inf_page = $inf_pages->pl_info_page_group->first();
+                } else {
+                    abort(404);
+                }
+            }
+        }
+        catch (Exception $e) {
+            abort(404);
+        }
+
+        return view('front.players.players', [
+            'inf_page' => $inf_page,
+            'inf_pages' => $inf_pages
+        ]);
+    }
 }

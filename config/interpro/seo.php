@@ -10,6 +10,7 @@ return [
         ],
     'owners'=>
         [
-            'titular'
+            'titular',
+            'pl_info_page'
         ]
 ];

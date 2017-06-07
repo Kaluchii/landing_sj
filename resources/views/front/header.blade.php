@@ -7,7 +7,7 @@
                     <li class="menu__item menu__item--delimiter">•</li>
                     <li class="menu__item"><a href="/" class="menu__link">ВОЛОНТЕРАМ</a></li>
                     <li class="menu__item menu__item--delimiter">•</li>
-                    <li class="menu__item"><a href="/" class="menu__link">ИГРОКАМ</a></li>
+                    <li class="menu__item"><a href="/players" class="menu__link">ИГРОКАМ</a></li>
                     <li class="menu__item menu__item--delimiter">•</li>
                     <li class="menu__item"><a href="/" class="menu__link">ВИДЕО</a></li>
                     <li class="menu__item menu__item--delimiter">•</li>

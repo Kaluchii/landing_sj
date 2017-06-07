@@ -119,6 +119,15 @@ return [
     ],
 
 
+    'for_players' => [
+        'groups' => [
+            'pl_info_page' => [
+                'string' => ['page_title'],
+                'text' => ['text'],
+            ]
+        ]
+    ],
+
     'scripts' => [
         'text' => ['before_close', 'after_open', 'before_head_close'],
     ],
