@@ -13,7 +13,7 @@
 
 Route::get('/',         'FrontController@getIndex');
 
-Route::get('/players/{page?}',         'FrontController@getPlayers');
+Route::get('/for-players/{page?}',         'FrontController@getPlayers');
 
 Route::post('/captcha',          'Back\MailController@Captcha');
 Route::post('/feedback/mail',    'Back\MailController@send');
@@ -48,8 +48,8 @@ Route::group(['middleware' => 'auth', 'prefix' => 'adm'],function(){
 
     Route::get('/meta',                         'AdminController@getIndexMeta');
 
-    Route::get('/players-page',                 'AdminController@getPlayersPage');
-    Route::get('/players-page/{id}',            'AdminController@getPlayersPageItem');
+    Route::get('/for-players',                  'AdminController@getPlayersPage');
+    Route::get('/for-players/{id}',             'AdminController@getPlayersPageItem');
 
     Route::get('/scripts',                      'AdminController@getScripts');
 

@@ -50,23 +50,13 @@ class FrontController extends Controller
             'packages' => $packages,
             'contact_us' => $contact_us,
         ]);
-        /*try {
-            $products = $this->extract->getBlock('products');
-            $guarantee = $this->extract->getBlock('guarantee');
-        }
-        catch (Exception $e) {
-            abort(404);
-        }
-        return view('front.index.index', [
-            'products' => $products,
-            'guarantee' => $guarantee,
-        ]);*/
     }
 
     public function getPlayers( $page_slug = null ){
         try {
             if (!is_null($page_slug)) {
                 $inf_page = $this->extract->getBySlug('pl_info_page', $page_slug);
+                $inf_pages = $this->extract->getBlock('for_players');
             } else {
                 $inf_pages = $this->extract->getBlock('for_players');
                 if ($inf_pages->pl_info_page_group->count() > 0) {
