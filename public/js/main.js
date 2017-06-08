@@ -34,25 +34,44 @@ $(document).ready(function () {
         }
     });
 
-    // Смена местами пятого и четвертого пункта в каждом втором спонсорском пакете
-    $('.package:nth-child(even)').each(function() {
-        $(this).find('.components-list__item--520').insertAfter($(this).find('.components-list__item--490'));
+    if($('.titular').length > 0){
+        // Смена местами пятого и четвертого пункта в каждом втором спонсорском пакете
+        $('.package:nth-child(even)').each(function() {
+            $(this).find('.components-list__item--520').insertAfter($(this).find('.components-list__item--490'));
+        });
+
+        // Перестройка блоков контента на разных разрешениях
+        function MoveBlock() {
+            if ($(window).width() <= 1000) {
+                $('.images-list').insertBefore($('.information__give-offer-wrap'));
+            } else {
+                $('.images-list').appendTo($('.information__wrap-1160'));
+            }
+        }
+
+        $(window).on('resize', MoveBlock);
+        $(window).on('load', MoveBlock());
+
+        window.vidplay = function() {
+            var video = document.getElementById("video");
+            video.paused ? video.play() : video.pause();
+        };
+    }
+    
+    $('.hamburger').on('click', function () {
+        $(this).toggleClass('active');
     });
 
-    // Перестройка блоков контента на разных разрешениях
-    function MoveBlock() {
-        if ($(window).width() <= 1000) {
-            $('.images-list').insertBefore($('.information__give-offer-wrap'));
-        } else {
-            $('.images-list').appendTo($('.information__wrap-1160'));
+    function menuItemsMove() {
+        if($(window).width() <= 680){
+            $('.menu__item--link').each(function () {
+                $(this).appendTo('.main-menu-list');
+            })
+        }else{
+            $('.menu__item--link').each(function () {
+                $(this).appendTo('.header__additionally-menu .menu__list');
+            })
         }
     }
-
-    $(window).on('resize', MoveBlock);
-    $(window).on('load', MoveBlock());
-
-    window.vidplay = function() {
-        var video = document.getElementById("video");
-        video.paused ? video.play() : video.pause();
-    }
+    $(window).on('load resize', menuItemsMove());
 });
