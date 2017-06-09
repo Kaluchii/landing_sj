@@ -1,8 +1,8 @@
-<div class="white-popup mfp-with-anim mfp-hide form-id" id="sponsor_form">
-    <h4 class="white-popup__title">Получить предложение</h4>
+<div class="white-popup mfp-with-anim mfp-hide form-id" id="become_sponsor_form">
+    <h4 class="white-popup__title">Стать спонсором</h4>
     <form novalidate class="white-popup__form feedback-form">
         {{--Передача Названия формы--}}
-        <input type="hidden" name="form" class="form-input" value="sponsor_form">
+        <input type="hidden" name="form" class="form-input" value="become_sponsor_form">
 
         <div class="feedback-form__row form-row">
             <label class="form-row__name">

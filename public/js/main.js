@@ -11,6 +11,28 @@ $(document).ready(function () {
         },
         midClick: true
     });
+    $('.become_sponsor_form').magnificPopup({
+        type: 'inline',
+        removalDelay: 500,
+        callbacks: {
+            beforeOpen: function () {
+                this.st.mainClass = 'mfp-zoom-in';
+                $('.popup-input[type=tel]').mask('+7 (000) 000-00-00');
+            }
+        },
+        midClick: true
+    });
+    $('.become_volunteer_form').magnificPopup({
+        type: 'inline',
+        removalDelay: 500,
+        callbacks: {
+            beforeOpen: function () {
+                this.st.mainClass = 'mfp-zoom-in';
+                $('.popup-input[type=tel]').mask('+7 (000) 000-00-00');
+            }
+        },
+        midClick: true
+    });
 
     //===============================================================
     //======= Обработчики для подсветки текущего пунтка меню ========
@@ -73,5 +95,5 @@ $(document).ready(function () {
             })
         }
     }
-    $(window).on('load resize', menuItemsMove());
+    $(window).on('load resize', menuItemsMove);
 });

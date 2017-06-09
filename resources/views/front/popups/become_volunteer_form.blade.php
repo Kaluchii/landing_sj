@@ -1,14 +1,14 @@
-<div class="white-popup mfp-with-anim mfp-hide form-id" id="sponsor_form">
-    <h4 class="white-popup__title">Получить предложение</h4>
+<div class="white-popup mfp-with-anim mfp-hide form-id" id="become_volunteer_form">
+    <h4 class="white-popup__title">Стать волонтером</h4>
     <form novalidate class="white-popup__form feedback-form">
         {{--Передача Названия формы--}}
-        <input type="hidden" name="form" class="form-input" value="sponsor_form">
+        <input type="hidden" name="form" class="form-input" value="become_volunteer_form">
 
         <div class="feedback-form__row form-row">
             <label class="form-row__name">
                 <span class="form-row__label">Имя</span>
                 <div class="form-row__validation-wrap">
-                    <input type="text" name="sponsor_name" required class="form-row__input form-input" autofocus>
+                    <input type="text" name="volunteer_name" required class="form-row__input form-input" autofocus>
                     <div class="form-row__tooltip-wrap"><p class="form-row__tooltip form-row__tooltip--border">Как к вам обращаться</p></div>
                 </div>
             </label>

@@ -27,6 +27,8 @@
 <div class="hide">
 
     @include('front.popups.sponsor_form')
+    @include('front.popups.become_sponsor_form')
+    @include('front.popups.become_volunteer_form')
     @include('front.popups.thank')
     <a href="#thanks" class="thank"></a>
 </div>

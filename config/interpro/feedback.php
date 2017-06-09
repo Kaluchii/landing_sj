@@ -35,5 +35,25 @@ return [
                 'string' => ['sponsor_name', 'phone', 'email', 'question'],
             ]
         ],
+        'become_sponsor_form' => [
+            //доп. поля интерфейса и настройки формы в формате qs конфига
+            //form1_mailto - подгруппа с одним полем mailto
+            'form_fields' => [
+                //Каждой форме добавляется подгруппа с именем имяформы_mails, здесь настраивать поля для этой подгруппы
+                //from, subject, host, port, encryption, to, username, email, body, mailed  -  по умолчанию +
+                //доп. поля формы в формате qs конфига - для значений полей от пользователя сайта
+                'string' => ['sponsor_name', 'phone', 'email', 'question'],
+            ]
+        ],
+        'become_volunteer_form' => [
+            //доп. поля интерфейса и настройки формы в формате qs конфига
+            //form1_mailto - подгруппа с одним полем mailto
+            'form_fields' => [
+                //Каждой форме добавляется подгруппа с именем имяформы_mails, здесь настраивать поля для этой подгруппы
+                //from, subject, host, port, encryption, to, username, email, body, mailed  -  по умолчанию +
+                //доп. поля формы в формате qs конфига - для значений полей от пользователя сайта
+                'string' => ['volunteer_name', 'phone', 'email', 'question'],
+            ]
+        ],
     ]
 ];
