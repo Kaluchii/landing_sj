@@ -10,13 +10,13 @@
                 <ul class="menu__list main-menu-list">
                     <li class="menu__item"><a href="/" class="menu__link link">О&nbsp;ТУРНИРЕ</a></li>
                     <li class="menu__item menu__item--delimiter">•</li>
-                    <li class="menu__item"><a href="#" class="menu__link link">ВОЛОНТЕРАМ</a></li>
-                    <li class="menu__item menu__item--delimiter">•</li>
+                    {{--<li class="menu__item"><a href="#" class="menu__link link">ВОЛОНТЕРАМ</a></li>
+                    <li class="menu__item menu__item--delimiter">•</li>--}}
                     <li class="menu__item"><a href="/for-players" class="menu__link link">ИГРОКАМ</a></li>
-                    <li class="menu__item menu__item--delimiter">•</li>
+                    {{--<li class="menu__item menu__item--delimiter">•</li>
                     <li class="menu__item"><a href="#" class="menu__link link">ВИДЕО</a></li>
                     <li class="menu__item menu__item--delimiter">•</li>
-                    <li class="menu__item"><a href="#" class="menu__link link">ФОТО</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link link">ФОТО</a></li>--}}
                 </ul>
             </nav>
             <div class="header__additionally-menu menu">

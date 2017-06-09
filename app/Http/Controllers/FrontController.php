@@ -58,9 +58,11 @@ class FrontController extends Controller
                 $inf_page = $this->extract->getBySlug('pl_info_page', $page_slug);
                 $inf_pages = $this->extract->getBlock('for_players');
             } else {
-                $inf_pages = $this->extract->getBlock('for_players');
-                if ($inf_pages->pl_info_page_group->count() > 0) {
-                    $inf_page = $inf_pages->pl_info_page_group->first();
+                $this->extract->tuneSelection('pl_info_page', 'displayed')->eq('show', true);
+                $for_players_block = $this->extract->getBlock('for_players');
+                $inf_pages = $inf_page_displayed = $for_players_block->getGroup('pl_info_page', 'displayed');
+                if ($inf_pages->count() > 0) {
+                    $inf_page = $inf_pages->first();
                 } else {
                     abort(404);
                 }
