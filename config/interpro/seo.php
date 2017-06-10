@@ -11,6 +11,7 @@ return [
     'owners'=>
         [
             'titular',
-            'pl_info_page'
+            'pl_info_page',
+            'vol_info_page',
         ]
 ];

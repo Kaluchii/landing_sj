@@ -119,6 +119,20 @@ class AdminController extends Controller
         ]);
     }
 
+    public function getVolunteersPage(){
+        $block = $this->extract->getBlock('for_volunteers');
+        return view('back.blocks.for_volunteers', [
+            'block' => $block
+        ]);
+    }
+
+    public function getVolunteersPageItem( $id ){
+        $group_item = $this->extract->getGroupItem('vol_info_page', $id);
+        return view('back.groups.vol_info_page.vol_info_page', [
+            'item' => $group_item,
+        ]);
+    }
+
     public function getPlayersPage(){
         $block = $this->extract->getBlock('for_players');
         return view('back.blocks.for_players', [

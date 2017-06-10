@@ -119,6 +119,16 @@ return [
     ],
 
 
+    'for_volunteers' => [
+        'groups' => [
+            'vol_info_page' => [
+                'string' => ['page_title'],
+                'text' => ['text'],
+            ]
+        ]
+    ],
+
+
     'for_players' => [
         'groups' => [
             'pl_info_page' => [
@@ -127,6 +137,7 @@ return [
             ]
         ]
     ],
+
 
     'scripts' => [
         'text' => ['before_close', 'after_open', 'before_head_close'],

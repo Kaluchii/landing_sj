@@ -49,7 +49,8 @@ $(document).ready(function () {
     });
     // Подсветка текущего пункта меню для бокового меню
     $('.sub-navigation__link').each(function () {
-        if ($(this).attr('href') == '/for-players/' + category2) {
+        if (($(this).attr('href') == '/for-players/' + category2) ||
+            ($(this).attr('href') == '/for-volunteers/' + category2)) {
             $(this).addClass('active');
         } else if (category2 === undefined) {
             $('.sub-navigation__item:first-child .sub-navigation__link').addClass('active');

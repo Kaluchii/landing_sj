@@ -56,11 +56,13 @@ class FrontController extends Controller
         try {
             if (!is_null($page_slug)) {
                 $inf_page = $this->extract->getBySlug('pl_info_page', $page_slug);
-                $inf_pages = $this->extract->getBlock('for_players');
+                $this->extract->tuneSelection('pl_info_page', 'displayed')->eq('show', true)->sortBy('sorter','ASC');
+                $for_players_block = $this->extract->getBlock('for_players');
+                $inf_pages = $for_players_block->getGroup('pl_info_page', 'displayed');
             } else {
                 $this->extract->tuneSelection('pl_info_page', 'displayed')->eq('show', true)->sortBy('sorter','ASC');
                 $for_players_block = $this->extract->getBlock('for_players');
-                $inf_pages = $inf_page_displayed = $for_players_block->getGroup('pl_info_page', 'displayed');
+                $inf_pages = $for_players_block->getGroup('pl_info_page', 'displayed');
                 if ($inf_pages->count() > 0) {
                     $inf_page = $inf_pages->first();
                 } else {
@@ -73,6 +75,34 @@ class FrontController extends Controller
         }
 
         return view('front.players.players', [
+            'inf_page' => $inf_page,
+            'inf_pages' => $inf_pages
+        ]);
+    }
+
+    public function getVolunteers( $page_slug = null ){
+        try {
+            if (!is_null($page_slug)) {
+                $inf_page = $this->extract->getBySlug('vol_info_page', $page_slug);
+                $this->extract->tuneSelection('vol_info_page', 'displayed')->eq('show', true)->sortBy('sorter','ASC');
+                $for_players_block = $this->extract->getBlock('for_volunteers');
+                $inf_pages = $for_players_block->getGroup('vol_info_page', 'displayed');
+            } else {
+                $this->extract->tuneSelection('vol_info_page', 'displayed')->eq('show', true)->sortBy('sorter','ASC');
+                $for_players_block = $this->extract->getBlock('for_volunteers');
+                $inf_pages = $for_players_block->getGroup('vol_info_page', 'displayed');
+                if ($inf_pages->count() > 0) {
+                    $inf_page = $inf_pages->first();
+                } else {
+                    abort(404);
+                }
+            }
+        }
+        catch (Exception $e) {
+            abort(404);
+        }
+
+        return view('front.volunteers.volunteers', [
             'inf_page' => $inf_page,
             'inf_pages' => $inf_pages
         ]);

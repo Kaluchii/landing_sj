@@ -13,7 +13,9 @@
 
 Route::get('/',         'FrontController@getIndex');
 
-Route::get('/for-players/{page?}',         'FrontController@getPlayers');
+Route::get('/for-players/{page?}',              'FrontController@getPlayers');
+
+Route::get('/for-volunteers/{page?}',           'FrontController@getVolunteers');
 
 Route::post('/captcha',          'Back\MailController@Captcha');
 Route::post('/feedback/mail',    'Back\MailController@send');
@@ -50,6 +52,9 @@ Route::group(['middleware' => 'auth', 'prefix' => 'adm'],function(){
 
     Route::get('/for-players',                  'AdminController@getPlayersPage');
     Route::get('/for-players/{id}',             'AdminController@getPlayersPageItem');
+
+    Route::get('/for-volunteers',               'AdminController@getVolunteersPage');
+    Route::get('/for-volunteers/{id}',          'AdminController@getVolunteersPageItem');
 
     Route::get('/scripts',                      'AdminController@getScripts');
 
