@@ -51,10 +51,6 @@
             </label>
         </div>
 
-        <div id="recaptcha" class="g-recaptcha" data-size="invisible"
-             data-sitekey="6LcvuCAUAAAAAJgp_f6pUukFjFpBccl72h0Y24rr"
-             data-callback="onSubmitReCaptcha"></div>
-
         <div class="feedback-form__row form-row feedback-form__row--right-flag">
             <span class="form-row__name">
                 <input type="submit" value="Отправить" class="form-row__send-form send-form">
