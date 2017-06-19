@@ -9,7 +9,7 @@
   position: relative;
   box-sizing: border-box;
   margin: 20px auto;
-  border: 3px solid #49840e;
+  border: 3px solid @base_hover_color;
   padding: 35px 30px;
   max-width: 380px;
   border-radius: 15px;
@@ -128,11 +128,11 @@
     }
 
     &:hover {
-      border: 1px solid #85be4c;
+      border: 1px solid @base_color;
     }
 
     &:focus {
-      border: 4px solid #85be4c;
+      border: 4px solid @base_color;
       margin: 0;
     }
   }
@@ -188,10 +188,10 @@
     }
 
     &--border{
-      border: 2px solid #49840e;
+      border: 2px solid @base_hover_color;
 
       &::before, &::after{
-        border: 2px solid #49840e;
+        border: 2px solid @base_hover_color;
       }
 
       &::before{
@@ -206,14 +206,14 @@
     border: none;
     color: #ffffff;
     cursor: pointer;
-    background-color: #49840e;
+    background-color: @base_color;
     font-weight: 900;
     border-radius: 4px;
     width: 120px;
     height: 40px;
 
     &:hover {
-      background-color: #679744;
+      background-color: @base_hover_color;
       outline: none;
     }
 
