@@ -32,7 +32,7 @@
             <div class="info-page__sub-navigation sub-navigation">
                 <ul class="sub-navigation__list">
                     @foreach($inf_pages as $item)
-                        <li class="sub-navigation__item"><a href="/for-players/{{$item->slug_field}}" class="sub-navigation__link">{{$item->page_title_field}}</a></li>
+                        <li class="sub-navigation__item"><span class="sub-navigation__link-wrap"><a href="/for-players/{{$item->slug_field}}" class="sub-navigation__link yellow-link">{{$item->page_title_field}}</a></span></li>
                     @endforeach
                 </ul>
             </div>

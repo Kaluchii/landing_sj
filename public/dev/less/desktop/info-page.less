@@ -44,16 +44,26 @@
     }
   }
 
-  &__link{
-    padding: 9px 9px 7px;
+  &__link-wrap{
+    padding: 11px 9px 7px;
     color: @base_color;
-    font-weight: 900;
-    font-size: 20px;
-    text-transform: uppercase;
+    user-select: none;
 
     &.active{
       background-color: #1c222a;
       color: #FFFFFF;
+
+      .sub-navigation__link{
+        background: 0 0;
+        color: inherit;
+      }
     }
+  }
+
+  &__link{
+    font-weight: 900;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: inherit;
   }
 }
