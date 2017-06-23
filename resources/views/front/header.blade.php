@@ -21,7 +21,7 @@
             </nav>
             <div class="header__additionally-menu menu">
                 <ul class="menu__list">
-                    <li class="menu__item menu__item--link"><a href="//www.3x3planet.com/" target="_blank" class="menu__link yellow-link">РЕГИСТРАЦИЯ КОМАНДЫ</a></li>
+                    <li class="menu__item menu__item--link"><a href="https://play.fiba3x3.com/events/" target="_blank" class="menu__link yellow-link">РЕГИСТРАЦИЯ КОМАНДЫ</a></li>
                     <li class="menu__item menu__item--link"><a href="#become_volunteer_form" class="menu__link yellow-link become_volunteer_form">СТАТЬ ВОЛОНТЕРОМ</a></li>
                     <li class="menu__item menu__item--link"><a href="#become_sponsor_form" class="menu__link yellow-link become_sponsor_form">СТАТЬ СПОНСОРОМ</a></li>
                 </ul>
