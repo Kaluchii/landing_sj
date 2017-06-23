@@ -108,6 +108,11 @@
                     <i class="fa fa-chevron-circle-right"></i> <span>Скрипты</span>
                 </a>
             </li>
+            <li>
+                <a href="/adm/mails">
+                    <i class="fa fa-chevron-circle-right"></i> <span>Почта</span>
+                </a>
+            </li>
 
 
 

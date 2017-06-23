@@ -153,4 +153,15 @@ class AdminController extends Controller
             'block' => $block
         ]);
     }
+
+    public function getMails(){
+        $sponsor_form = $this->extract->getBlock('sponsor_form');
+        $become_sponsor_form = $this->extract->getBlock('become_sponsor_form');
+        $become_volunteer_form = $this->extract->getBlock('become_volunteer_form');
+        return view('back.blocks.mails', [
+            'sponsor_form' => $sponsor_form,
+            'become_sponsor_form' => $become_sponsor_form,
+            'become_volunteer_form' => $become_volunteer_form,
+        ]);
+    }
 }

@@ -59,6 +59,9 @@ Route::group(['middleware' => 'auth', 'prefix' => 'adm'],function(){
     Route::get('/scripts',                      'AdminController@getScripts');
 
 
+    Route::get('/mails',                        'AdminController@getMails');
+
+
 
 
 
