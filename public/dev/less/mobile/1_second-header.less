@@ -29,6 +29,12 @@
 
 @media all and (max-width: 820px){
   .second-header{
+    &:not(.second-header--stratification){
+      &:before{
+        background-position: center top;
+      }
+    }
+
     &__block-title{
       font-size: 38px;
     }
@@ -93,6 +99,12 @@
 
 @media all and (max-width: 460px){
   .second-header{
+    &:not(.second-header--stratification){
+      &:before{
+        background-position: center bottom;
+      }
+    }
+
     &__inf-wrap{
       flex-direction: column;
       flex-grow: 1;

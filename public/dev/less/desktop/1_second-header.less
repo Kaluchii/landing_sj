@@ -6,6 +6,21 @@
     position: absolute;
   }
 
+  &:not(.second-header--stratification){
+    position: relative;
+
+    &:before{
+      content: '';
+      z-index: -2;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      transform: rotate(180deg);
+      background: url("/img/area.png") no-repeat 60% top;
+      pointer-events: none;
+    }
+  }
+
   &__wrap-1170{
     display: flex;
     justify-content: space-between;
