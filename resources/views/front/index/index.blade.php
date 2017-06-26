@@ -61,7 +61,7 @@
                 {!! wrap_in_tag($statistic->block_title_field, '<span class="thin-colored">', '</span>') !!}
             </h2>
             <div class="statistic__img-facts-wrap">
-                <div class="statistic__img-wrap">
+                <div class="statistic__img-wrap cut-corner-dark">
                     <img src="{{$statistic->main_img_field->link}}" alt="{{$statistic->main_img_field->alt}}" class="statistic__img">
                 </div>
                 <ul class="statistic__facts facts-in-figures">
@@ -88,7 +88,9 @@
             <ul class="principles__list three-elem-list">
                 @foreach($principles->principles_list_group as $item)
                     <li class="three-elem-list__item info-block info-block--with-img">
-                        <img src="{{$item->img_field->link}}" alt="{{$item->img_field->alt}}" class="info-block__img info-block__img--move">
+                        <div class="info-block__img-wrap cut-corner-light">
+                            <img src="{{$item->img_field->link}}" alt="{{$item->img_field->alt}}" class="info-block__img info-block__img--move">
+                        </div>
                         <div class="info-block__text-wrap">
                             <h3 class="info-block__title">{!! wrap_in_tag($item->item_title_field, '<span class="reg-colored">', '</span>') !!}</h3>
                             <p class="info-block__text">{!! $item->text_field !!}</p>
@@ -106,7 +108,9 @@
                 {!! wrap_in_tag($objectives->block_title_field, '<span class="thin-colored">', '</span>') !!}
             </h2>
             <div class="objectives__img-targets-wrap">
-                <img src="{{$objectives->main_img_field->link}}" alt="{{$objectives->main_img_field->alt}}" class="objectives__img">
+                <div class="objectives__img-wrap cut-corner-dark">
+                    <img src="{{$objectives->main_img_field->link}}" alt="{{$objectives->main_img_field->alt}}" class="objectives__img cut-corner">
+                </div>
                 <ul class="objectives__list targets-list">
                     @foreach($objectives->objectives_list_group as $item)
                         <li class="targets-list__item info-block">
@@ -128,7 +132,9 @@
             <ul class="leaders__list three-elem-list">
                 @foreach($leaders->leaders_list_group as $item)
                     <li class="three-elem-list__item info-block info-block--with-img">
-                        <img src="{{$item->img_field->link}}" alt="{{$item->img_field->alt}}" class="info-block__img info-block__img--move">
+                        <div class="info-block__img-wrap cut-corner-light">
+                            <img src="{{$item->img_field->link}}" alt="{{$item->img_field->alt}}" class="info-block__img info-block__img--move">
+                        </div>
                         <div class="info-block__text-wrap">
                             <h3 class="info-block__title">{!! wrap_in_tag($item->item_title_field, '<span class="reg-colored">', '</span>') !!}</h3>
                             <p class="info-block__text">{!! $item->text_field !!}</p>
@@ -169,7 +175,9 @@
                     @endforeach
                 </ul>
             </div>
-            <img src="{{$plans->main_img_field->link}}" alt="{{$plans->main_img_field->alt}}" class="plans__img">
+            <div class="plans__img-wrap cut-corner-light">
+                <img src="{{$plans->main_img_field->link}}" alt="{{$plans->main_img_field->alt}}" class="plans__img">
+            </div>
         </div>
     </section>
 
@@ -212,7 +220,9 @@
                             <?php $item = $package->components_list_group->current(); ?>
                             @if( $i <= 3 )
                                 <li class="components-list__item info-block info-block--with-img">
-                                    <img src="{{$item->img_field->link}}" alt="{{$item->img_field->alt}}" class="info-block__img info-block__img--move">
+                                    <div class="info-block__img-wrap @if( $j % 2 == 0 ) cut-corner-dark @else cut-corner-light @endif">
+                                        <img src="{{$item->img_field->link}}" alt="{{$item->img_field->alt}}" class="info-block__img info-block__img--move">
+                                    </div>
                                     <div class="info-block__text-wrap">
                                         <h3 class="info-block__title">{{ $i }}.<br>{!! wrap_in_tag($item->item_title_field, '<span class="reg-colored">', '</span>') !!}</h3>
                                         <p class="info-block__text">{{ $item->text_field  }}</p>
@@ -220,7 +230,9 @@
                                 </li>
                             @else
                                 <li class="components-list__item @if($i == 4) components-list__item--520 @else components-list__item--490 @endif info-block">
-                                    <img src="{{$item->img_field->link}}" alt="{{$item->img_field->alt}}" class="info-block__img">
+                                    <div class="info-block__img-wrap @if( $j % 2 == 0 ) cut-corner-dark @else cut-corner-light @endif">
+                                        <img src="{{$item->img_field->link}}" alt="{{$item->img_field->alt}}" class="info-block__img">
+                                    </div>
                                     <h3 class="info-block__title">{{ $i }}.<br>{!! wrap_in_tag($item->item_title_field, '<span class="reg-colored">', '</span>') !!}</h3>
                                     <p class="info-block__text">{{ $item->text_field  }}</p>
                                     @if( $i == 5 )
@@ -247,7 +259,7 @@
                 <h3 class="contact-block__title">
                     {!! wrap_in_tag($contact_us->block_title_field, '<span class="thin-colored">', '</span>') !!}
                 </h3>
-                <div class="contact-block__img-wrap">
+                <div class="contact-block__img-wrap cut-corner-dark">
                     <img src="{{$contact_us->main_img_field->link}}" alt="{{$contact_us->main_img_field->alt}}" class="contact-block__img">
                 </div>
                 <p class="contact-block__name">{{ $contact_us->person_name_field  }}</p>

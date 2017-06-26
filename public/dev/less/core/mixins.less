@@ -39,3 +39,35 @@
     color: @hover;
   }
 }
+
+.cut-corner(@bg_color){
+  position: relative;
+  line-height: 0;
+
+  &:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-top: 30px solid transparent;
+    border-right: 30px solid @bg_color;
+    border-bottom: 30px solid @bg_color;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  &:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 30px solid @bg_color;
+    border-top: 30px solid @bg_color;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+}
