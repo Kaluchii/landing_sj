@@ -17,6 +17,19 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Exo2';
+  src: local('Exo2-Light'), local('Exo2 Light'), url('../fonts/Exo2/exo2-light.woff2') format('woff2'), url('../fonts/Exo2/exo2-light.woff') format('woff'), url('../fonts/Exo2/exo2-light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Exo2';
+  src: local('Exo2-Black'), local('Exo2 Black'), url('../fonts/Exo2/exo2-black.woff2') format('woff2'), url('../fonts/Exo2/exo2-black.woff') format('woff'), url('../fonts/Exo2/exo2-black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
 .link{
   .link(@link-color,@link-border,@hover-color,@hover-border);
 }
@@ -33,6 +46,7 @@ body{
   color: @base_color;
   font-weight: 300;
   font-size: inherit;
+  font-family: @headerFont;
 }
 
 .reg-colored{
