@@ -7,7 +7,7 @@
     &__text-col{
       padding: 0 20px 0 40px;
 
-      & + .plans__img{
+      & + .plans__img-wrap{
         margin-top: 50px;
       }
     }
@@ -47,10 +47,8 @@
       max-width: 840px;
     }
 
-    &__img{
-      & + .plans__list{
-        margin-top: 40px;
-      }
+    &__img-wrap{
+      width: auto;
     }
   }
 
@@ -97,6 +95,10 @@
   .plans{
     &__wrap-1210{
       padding: 0 20px 50px;
+    }
+
+    &__img-wrap{
+      overflow: hidden;
     }
   }
 }

@@ -80,14 +80,17 @@
       align-items: flex-start;
     }
 
-    &__img{
-      &--move{
-        width: 35%;
-      }
-    }
-
     &__text-wrap{
       padding-left: 5%;
+      width: 80%;
+    }
+  }
+}
+
+@media all and (max-width: 480px){
+  .info-block{
+    &__img-wrap{
+      display: inline-block;
     }
   }
 }
